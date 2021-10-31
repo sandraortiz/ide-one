@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Page Needs ================================================== -->
+  <meta charset="utf-8">
+
+  <!-- Mobile Specific Metas ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+  <!-- Site Title -->
+  <title>ESAN | Graduate School of Business</title>
+
+  <!-- CSS
+         ================================================== -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- Animation -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- magnific -->
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- carousel -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <!-- isotop -->
+  <link rel="stylesheet" href="css/isotop.css">
+  <!-- ico fonts -->
+  <link rel="stylesheet" href="css/xsIcon.css">
+  <!-- Template styles-->
+  <link rel="stylesheet" href="sass/style.css">
+  <!-- Responsive styles-->
+  <link rel="stylesheet" href="sass/responsive.css">
+
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KTDGS9"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KTDGS9');</script>
+  <!-- End Google Tag Manager -->
+
+</head>
+
+<body class="body-color">
+  <div class="body-inner">
+    <!-- Header start -->
+    <header id="header" class="header header-transparent">
+      <div class="container">
+        <nav id="navbarnav" class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
+        </button>
+          <!-- logo-->
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logos/logo.png" alt="">
+          </a>
+         
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item nav-link active"><a class="ts-scroll" href="#home">MBA</a></li>
+              <li class="nav-item nav-link"><a class="ts-scroll" href="#sponsors">Rankings</a></li>
+              <li class="nav-item nav-link"><a class="ts-scroll" href="#ts-speakers">Palabras del <br>
+                  Director</a></li>
+              <li class="nav-item nav-link"><a class="ts-scroll" href="#porque_mba">¿Por qué el MBA
+                  Semipresencial
+                  de ESAN?</a></li>
+
+              <li class="nav-item nav-link"><a class="ts-scroll" href="#se_parte">Sé parte del
+                  MBA
+                  Semipresencial</a></li>
+              <li class="nav-item nav-link"><a class="ts-scroll" href="#beneficios">Beneficios</a></li>
+              <li class="nav-item nav-link"><a class="ts-scroll" href="#porque_esan">¿Por qué un
+                  MBA en ESAN?</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div><!-- container end-->
+    </header>
+    <!--/ Header end -->
+
+    <!-- banner start-->
+    <section class="hero-area content-left" id="home"
+      style="background-image: url(./images/hero_area/kv1.jpg);  background-size: cover; background-position: bottom center;">
+      <div class="banner-item ">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 d-flex align-items-end ">
+              <div class="banner-content-wrap banner-content-wrap-desktop ">
+
+                <h1 class="banner-title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="700ms">
+                  Change your mindset
+
+                </h1>
+                <p class="banner-info wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms">
+                  Unlock your potential</p>
+
+
+
+              </div>
+
+              <div class="banner-content-wrap banner-content-wrap-mobile">
+
+                <h1 class="banner-title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="700ms">
+                  Change your mindset
+
+                </h1>
+                <p class="banner-info wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms">
+                  Unlock your potential</p>
+
+
+
+              </div>
+              <!-- Banner content wrap end -->
+            </div><!-- col end-->
+            <div class="col-lg-6 d-flex align-items-center col-resp" id="application-root">
+              <form class="form-1" v-on:submit.prevent="sendInformationRequest()">
+                <div class="form-group">						
+                  <div>
+                    <select class="form-select" aria-label="ciudad_de_residencia" name="ciudad_de_residencia" id="ciudad_de_residencia"  v-model='payload.ciudad_de_residencia' required>
+                                     <option value="">Selecciona tu ciudad de residencia</option>
+                                      <option value="Arequipa">Arequipa</option>
+                                      <option value="Arequipa">Cajamarca</option>
+                                      <option value="Chiclayo">Chiclayo</option>
+                                      <option value="Cusco">Cusco</option>
+                                      <option value="Huancayo">Huancayo</option>
+                                      <option value="Ica">Ica</option>
+                                      <option value="Piura">Piura</option>
+                                      <option value="Trujillo">Trujillo</option>
+                                      <option value="Trujillo">Otra</option> 
+                    </select>
+                            </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" v-model='payload.nombres' placeholder="Nombres" name="nombres" id="nombres" required="required"
+                    class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="text" v-model='payload.apellido_paterno' name="apellido_paterno" id="apellido_paterno" placeholder="Apellidos"
+                    required="required" class="form-control">
+                </div>
+                <div class="form-group"><input type="text" v-model='payload.numero_de_id' name="numero_de_id" id="numero_de_id" placeholder="DNI"
+                    required="required" class="form-control"></div>
+                <div class="form-group"><input type="email" v-model='payload.correo_electrnico' name="correo_electrnico" id="correo_electrnico"
+                    placeholder="Email" required="required" class="form-control">
+                </div>
+                
+                <div class="form-group"><input type="tel" v-model='payload.telefono' id="telefono" name="telefono" placeholder="Teléfono"
+                    required="required" class="form-control"></div>
+                <div class="form-group"><input type="text" v-model='payload.empresa' id="empresa" name="empresa" placeholder="Empresa"
+                    required="required" class="form-control"></div>
+                <div class="form-group"><input type="text" id="cargo" v-model='payload.cargo' name="cargo" placeholder="Cargo"
+                    required="required" class="form-control"></div>
+
+
+                <div class="form-group">
+                  <div class="form-check"><input type="checkbox" v-model='payload.acepta_politica_de_privacidad' id="acepta_politica_de_privacidad" required="required"
+                      class="form-check-input"> <label for="gridCheck" class="form-check-label">
+                      Acepto las <a href="#politica-de-proteccion-de-datos" data-toggle="modal"
+                        data-target="#politica-de-proteccion-de-datos">condiciones de tratamiento para mis datos
+                        personales</a>.
+                    </label></div>
+                </div>
+                <button type="button" class="btn" disabled v-if="sending">
+                  enviando...
+                </button>
+                <button type="submit" class="btn " v-else>SOLICITAR INFORMACIÓN</button>
+              </form>
+            </div>
+          </div><!-- row end-->
+        </div>
+        <!-- Container end -->
+      </div>
+    </section>
+    <!-- banner end-->
+    <!-- ts experience start-->
+    <section id="schedules" class="ts-schedule">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-one mx-auto ">
+            <div class="div-title mx-auto  ">
+              <h2 class="section-title ">
+                <span class="span-1">MBA </span><br>
+                Semipresencial <br>
+                de <span class="span-2">ESAN</span>
+              </h2>
+              <p class="section-title-text"><span>27 de noviembre</span> <br> <small>Fechas de inicio</small></p>
+            </div>
+            <div class="section-title ">
+            </div>
+            <div class="schedules-1 schedules-text-1 ">
+              <div>
+                <p>Inversión
+                  <br> <span>S/ 68 000</span>
+                  <br>Conoce nuestras opciones de <span>
+                    
+                    <a href="https://www.esan.edu.pe/mba/semipresencial/financiamiento/" 
+                   target="_blank" style="text-decoration: none;"> financiamiento</a>
+                  </span>
+                </p>
+              </div>
+              <div>
+                <p>La duración del programa es <br> 
+                  de aproximadamente 22 meses,
+                    <br> más periodo de tesis o trabajo de investigación.
+                  </p>
+
+              </div>
+            </div>
+            <div class="section-title "></div>
+            <div class="schedules-1 schedules-text-2">
+              <div class="schedules-1-image">
+                <img src="./images/iconos/img-2.png" alt="" class="img-fluid">
+              </div>
+              <div class="schedules-1-text">
+                <p>Susana Morán <br> <span>Ejecutiva Comercial
+
+                  </span></p>
+                <p>
+                  <span>  smoranv@esan.edu.pe <br>
+                  <img src="images/iconos/wsp.png" style="width: 26px;" alt=""> 944 462 683</span>
+                </p>
+              </div>
+            </div>
+          </div><!-- col end-->
+          <div class="col-lg-6 col-two d-flex align-items-center ">
+            <div class="box-content">
+              <div class="box-mod mb-5">
+                <div class="b-first my-auto">
+                  <img src="./images/iconos/icon-1.png" alt="" class="img-fluid">
+                </div>
+                <div class="b-two my-auto">
+                  <h1>70%</h1>
+                  <h2>
+                    Online
+                  </h2>
+                </div>
+              </div>
+              <div class="box-mod">
+                <div class="b-first my-auto">
+                  <img src="./images/iconos/icon-2.png" alt="" class="img-fluid">
+                </div>
+                <div class="b-two my-auto">
+                  <h1>30%</h1>
+                  <h2>
+                    Presencial
+                  </h2>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div><!-- row end-->
+
+      </div><!-- container end-->
+    </section>
+    <!-- ts experience end-->
+
+    <!-- sponsors client logo start-->
+    <section id="sponsors" class="ts-sponsors ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-one  mx-auto my-aut ">
+            <div class="div-title mx-auto  ">
+              <h2 class="section-title white o ">
+                <span>El MBA de ESAN</span> <br>
+                en los rankings <br>
+                más prestigiosos
+              </h2>
+            </div>
+          </div><!-- col end-->
+          <div class="col-lg-6 ts-sponsors-content pl-0 pr-0 ">
+            <div class="rk-box">
+              <div class="white-rk">
+                <a href="#" class="sponsors-logo">
+                  <img class="img-fluid" src="images/rankings/ranking-america.png" alt="">
+                  <p>
+                    Logra la excelencia profesional
+                    con una experiencia internacional
+                    que transformará tu vida
+                  </p>
+                  <h2 class="pb-4">
+                    Sé parte del MBA
+                  </h2>
+                </a>
+              </div>
+              <div class="space">
+                &nbsp;
+              </div>
+              <div class="white-rk">
+                <a href="#" class="sponsors-logo">
+                  <img class="img-fluid" src="images/rankings/ranking-qs.png" alt="">
+                  <p>
+                    Logra la excelencia profesional
+                    con una experiencia internacional
+                    que transformará tu vida
+                  </p>
+                  <h2 class="pb-4">
+                    Sé parte del MBA
+                  </h2>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+        </div><!-- row end-->
+
+      </div><!-- container end-->
+    </section>
+    <!-- sponsors client logo end-->
+    <!-- ts speaker start-->
+    <section id="ts-speakers" class="ts-speakers">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-one order-last order-lg-first  order-xl-first ">
+            <img src="./images/speakers/director.png" alt="" class="img-fluid">
+          </div><!-- col end-->
+          <div
+            class="col-lg-6 col-text order-first d-flex order-lg-last  order-xl-last flex-column justify-content-end ">
+            <div class="text-direct">
+              <h2 class="section-title  ">
+                <span>Palabras</span> <br>
+                del Director
+
+              </h2>
+              <p class="ts-speakers-text">
+                Si buscas un programa que te rete a nivel profesional y personal, y estás dispuesto a liberar tu potencial, aprender nuevas metodologías y cambiar tu mindset, el MBA Semipresencial de ESAN es para ti.
+              </p>
+            </div>
+            <h1>
+              Eddy <br> Morris
+            </h1>
+
+          </div><!-- col end-->
+        </div><!-- row end-->
+
+      </div><!-- container end-->
+
+      <!-- shap img-->
+     
+      <!-- shap img end-->
+    </section>
+    <!-- ts speaker end-->
+
+    <!-- ts intro start -->
+    <section id="porque_mba" class="">
+      <div class="container">
+        <div class="row row-porque_mba justify-content-md-center">
+          <div class="col-md-6 col-lg-4">
+            <div>
+              <p class="porque_mba_title">¿Por qué <br>el MBA <br>
+                <span class="porque_mba_subtitle"> Semipresencial <br> de ESAN ? </span>
+              </p>
+            </div>
+          </div><!-- col end-->
+          <div class="col-md-6 col-lg-6">
+            <div class="porque_mba_text">
+              <p>
+                El MBA de ESAN en modalidad Semipresencial te permitirá
+                acceder a una educación mixta, donde recibirás el 70% de las clases online y el 30% en modalidad
+                presencial.
+
+
+              </p>
+              <p>Conoce todo lo que realizarás en el programa. </p>
+            </div>
+          </div><!-- col end-->
+        </div>
+      </div><!-- container end-->
+
+    </section>
+    <!-- ts intro end-->
+
+    <section class="carrusel-content">
+      <div class="container">
+        <div class="row item-slide d-flex justify-content-left">
+
+          <div class="col">
+            <div class="">
+              <p class="text-content  pq_esan_icon_1 "></p>
+              <div class="text-content carrusel-text border-content">
+                <p class="pq_esan_title">Malla Curricular <br>
+                  Moderna</p>
+                <p class="pq_esan_p">
+                  La estructura curricular renovada responde a las nuevas necesidades 
+                  del mercado y a aquellas habilidades que los profesionales deben desarrollar para ser líderes ágiles, ambidiestros que puedan brindar un crecimiento exponencial en sus organizaciones.
+                </p>
+              </div>
+
+
+            </div>
+
+
+          </div>
+          <div class="col">
+            <div class="pq_esan_carrousel">
+              <p class="text-content  pq_esan_icon_2"></p>
+              <div class="text-content carrusel-text">
+                <p class="pq_esan_title">International <br>
+                  Week</p>
+                <p class="pq_esan_p">
+                  Accederás a 2 semanas internacionales que se realizan de manera presencial en el campus de ESAN, donde profesores de 
+                  diferentes lugares del mundo llegan a Perú para brindar la mejor experiencia internacional académica del Perú.
+                </p>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="col">
+            <div class="">
+
+              <p class="text-content  pq_esan_icon_3"></p>
+              <div class="text-content carrusel-text border-content">
+                <p class="pq_esan_title">Seminario <br>
+                  Internacional</p>
+                <p class="pq_esan_p">
+                  Realizarás un viaje de inmersión global, de manera obligatoria, 
+                  con el propósito de vivir una experiencia in situ de cómo se gestionan los negocios en otros países.
+
+
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col">
+            <div class="pq_esan_carrousel">
+
+              <p class="text-content  pq_esan_icon_4"></p>
+              <div class="text-content carrusel-text">
+                <p class="pq_esan_title">Track de<br>
+                  Especialidades</p>
+                <p class="pq_esan_p">
+                  Podrás enfocar tus estudios según la temática de tu interés. Nuestro MBA te permitirá elegir entre una 
+                  lista de 11 opciones de especialidades las cuales te permitirán potenciar habilidades en un área específica.
+
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ts pricing start-->
+    <section id="se_parte" class="ts-pricing p-60">
+      <div class="container">
+        <div class="row align-items-center row-se_parte">
+          <div class="col-md-6 col-lg-6 col-img">
+            <div class="se_parte_image">
+              <!-- <img src="../images/se_parte/img-6.jpg" />  -->
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="se_parte_content">
+              <p class="se_parte_title title-desktop">Sé parte del
+                <br><span class="se_parte_title_second"> MBA Semipresencial</span>
+              </p>
+              <p class="se_parte_title title-responsive">Sé parte del
+                <br><span class="se_parte_title_second"> MBA <br> Semipresencial</span>
+              </p>
+              <hr class="se_parte__div" />
+              <p class="se_parte_text">
+                Un nuevo perfil profesional requiere una formación diferente. ¡Sé parte de la nueva generación de
+                líderes que transformarán los negocios!
+              </p>
+            </div>
+          </div>
+          <!-- section title end-->
+        </div><!-- col end-->
+        <!-- row end-->
+      </div><!-- container end-->
+
+    </section>
+    <!-- ts pricing end-->
+
+    <!-- gallery start -->
+    <section id="beneficios" class="">
+      <div class="container">
+        <div class="row row-beneficios align-items-center">
+          <div class="col-md-5 col-lg-4 ">
+            <div>
+              <p class="beneficios-title">Beneficios <br> del programa <br> Semipresencial</p>
+              <hr class="beneficios_div" />
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet,
+                obcaecati! Mollitia necessitatibus atque nisi quo? Dolor, soluta
+              </p>
+            </div>
+          </div>
+          <div class="col-md-7 col-lg-8 ">
+            <div class="container">
+              <div class="row mb-4">
+                <div class="col-md-6 mb-4">
+                  <div class="box-conteiner">
+                    <p class="logo  world-icon"></p>
+                    <p class="text">
+                      Estudia desde <br> cualquier parte <br> del mundo
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6  ">
+                  <div class="box-conteiner">
+                    <p class="logo house-icon"></p>
+                    <p class="text text-house">
+                      Adoptamos a <br> educación a tu ritmo <br> y estilo de vida
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-4 ">
+                  <div class="box-conteiner">
+                    <p class="logo box-icon"></p>
+                    <p class="text text-lideres">
+                      Conexión con <br>lideres <br> Empresariales
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 ">
+                  <div class="box-conteiner">
+                    <p class="logo inter-logo"></p>
+                    <p class="text">
+                      Estudia desde <br> cualquier <br> Parte del mundo
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- col end-->
+        </div>
+
+      </div>
+      <!-- container end-->
+    </section>
+    <!-- ts blog start-->
+    <section id="porque_esan" class="ts-blog p-60" style="background-image: url('images/iconos/bg.png'); background-size: cover; ">
+      <div class="container porque_esan_container_mba_de_esan">
+        <div class="row porque_esan_desktop_mba_de_esan">
+          <div class="col">
+            <div class="porque_esan_section-content">
+              <div class="porque_esan_section-1 porque_esan_image_mba_de_esan">
+                <img src="images/porque_esan/img-7.jpg" />
+              </div>
+              <div class="porque_esan_section-2">
+                <p class="porque_esan_title-section">¿Por qué un <br> MBA de ESAN?</p>
+                <p>
+                  Estudiar un MBA en ESAN, escuela N°1 en Perú y TOP 5 en Latinoamérica, te permitirá obtener un
+                  elemento diferenciador, multiplicando tu valor profesional en el mercado.
+                  <br> <br>
+                  Es una buena oportunidad para mejorar tus habilidades profesionales, ascender o iniciar tu propia
+                  empresa.
+                </p>
+              </div>
+            </div>
+          </div><!-- col end-->
+        </div>
+        <div class="row porque_esan_mobile_mba_de_esan">
+          <div class="col">
+            <div class="porque_esan_image_mba_de_esan porque_esan_image ">
+              <img src="images/porque_esan/img-7.jpg" />
+            </div>
+            <div class="porque_esan_section-3">
+              <p class="porque_esan_title-section">¿Por qué un MBA de ESAN?</p>
+              <p>
+                Estudiar un MBA en ESAN, escuela N°1 en Perú y TOP 5 en Latinoamérica, te permitirá obtener un elemento
+                diferenciador, multiplicando tu valor profesional en el mercado.
+                <br> <br>
+                Es una buena oportunidad para mejorar tus habilidades profesionales, ascender o iniciar tu propia
+                empresa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div><!-- container end-->
+      <!-- shap image-->
+
+    </section>
+
+    <!-- ts blog end-->
+
+    <!-- ts footer area start-->
+    <div class="footer-area">
+      <!-- footer start-->
+      <footer class="ts-footer ts-footer-item">
+        <div class="container">
+          <div class="row footer-border">
+            <div class="col-lg-4 mx-auto my-auto">
+
+              <!-- footer social end-->
+
+              <div class="logo">
+                <img src="images/footer/logo.png" alt="">
+              </div>
+
+              <!-- footer menu end-->
+
+
+
+            </div><!-- col end-->
+            <div class="col-lg-4 mx-auto">
+
+              <div class="column-three">
+                <p class="text-uni"> Síguenos en : </p>
+                <div class="social-media">
+                  <span class="icon"><img src="images/footer/facebook.png" alt=""></span>
+                  <span class="icon"><img src="images/footer/youtube.png" alt=""></span>
+                  <span class="icon"><img src="images/footer/linkedin.png" alt=""></span>
+                  <span class="icon"><img src="images/footer/twitter.png" alt=""></span>
+
+                </div>
+                <p class="text-uni">&copy; Universidad ESAN 2021</p>
+                <br>
+                <p class="web"> www.esan.edu.pe </p>
+
+              </div>
+
+
+            </div><!-- col end-->
+            <div class="col-lg-4 my-auto ">
+
+              <!-- footer social end-->
+
+              <div class="data">
+                <p class="correo">(511) 317-7200</p>
+                <p class="direccion">Alonso de Molina 1652, Monterrico</p>
+                <p class="distrito">Surco, Lima - Perú</p>
+              </div>
+              <!-- footer menu end-->
+
+
+            </div><!-- col end-->
+
+          </div><!-- row end-->
+        </div><!-- container end-->
+      </footer>
+      <!-- footer end-->
+      <!-- <div class="BackTo2">
+            <a href="#" class="fa fa-angle-up" ></a>
+         </div>
+         <div class="BackTo1">
+            <a href="#" class="fa fa-angle-up" ></a>
+         </div> -->
+      
+      <div class="modal fade" id="politica-de-proteccion-de-datos" tabindex="-1" role="dialog" aria-labelledby="titulo-de-proteccion-de-datos" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+             
+              <h4 class="modal-title" id="titulo-de-proteccion-de-datos">Política de Protección de Datos Personales  </h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+      <p>De conformidad con la Ley N° 29733, Ley de Protección de Datos Personales, el usuario da su consentimiento para el tratamiento de los datos personales que son facilitados en el presente formulario o por cualquier medio desde el momento de su ingreso o utilización del portal. Asimismo, el usuario consiente que la Universidad ESAN pueda ceder estos datos a terceros para los fines expuestos a continuación.</p>  
+      <p>Estos serán incorporados en el banco de datos de usuarios de la Universidad ESAN, para utilizarlos en seguimiento de un eventual proceso de matrícula, envío de publicidad mediante cualquier medio y soporte, envío de invitaciones a actividades convocadas por ESAN o sus socios comerciales, para fines estadísticos,  gestiones institucionales y administrativas; y se mantendrán mientras sean útiles para que la Universidad pueda prestar y ofrecer sus servicios y darles trámite.</p>
+      <p>El usuario podrá ejercer los derechos de acceso, rectificación, oposición y cancelación de los datos personales escribiendo a datospersonales@esan.edu.pe o a la siguiente dirección: Oficina de Protección de Datos Personales, Universidad ESAN. Alonso de Molina 1652, Monterrico, Surco, Lima - Perú</p>
+         </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-close  btn" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn " id="aceptar-politica-de-proteccion-de-datos">Acepto esta política</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- ts footer area end-->
+
+    <!-- Javascript Files
+            ================================================== -->
+    <!-- initialize jQuery Library -->
+    <script src="js/jquery.js"></script>
+
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap jQuery -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Counter -->
+    <script src="js/jquery.appear.min.js"></script>
+    <!-- Countdown -->
+    <script src="js/jquery.jCounter.js"></script>
+    <!-- magnific-popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Waypoints -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- isotop -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <!-- Template custom -->
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js" integrity="sha256-TaLceMwjWRqe4yhbqPOJH6V7UGt5AvvdNfpaIXJWbFU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+    <script type="application/javascript" src="https://www.esan.edu.pe/estaticos/2019/js/user_agent.js?v=0.32&datetime=2019-10-04PET18:33:27"></script>
+    
+    <!-- El siguiente script está en el Google Tag Manager, así que debe ser omitido en producción para no redundar en las fuentes de tráfico -->
+    <script type="application/javascript" src="https://www.esan.edu.pe/backoffice/muestras/traffic_source_cookie.js"></script>
+      <script  type="text/javascript" >
+        var informationRequest = new Vue({
+              el: '#application-root',
+              data: {
+                payload: {
+                  /* 
+                    Los valores iniciales son para las pruebas. Una vez publicado los textos los puedes cambiar por '' y los números enteros por 0. 
+                    Las filas comentadas son de campos opcionales (no están todos).
+                    Para una lista completa de campos disponibles, referirse a la documentación del *endpoint*.
+                  */
+                  nombres: '',
+                  apellido_paterno: '',
+                // 	apellido_materno: '', 
+                // 	tipo_de_id,
+                  numero_de_id: '',
+                  ciudad_de_residencia: '',
+                // 	edad,
+                  academic_degree_code: null,
+                // 	exalumno,
+                  correo_electrnico: '',
+                  telefono: '',
+                  acepta_politica_de_privacidad: 0, 
+                  empresa: '',
+                  job_industry_code: 'EDU',
+                  cargo: '',
+                  job_function_code: 'MKT',
+                  ciudad: 'Lima', // debe inicializarse, aquí; en javascript después; o, en última instancia, presentar opciones en el HTML para que el usuario elija
+                  programa: 'MBA Tiempo Parcial', // igual que *ciudad*
+                // 	curso,
+                  consulta: '',
+                // 	meses_para_llevarlo,
+                  conferencia: 0,
+                  datos_de_la_conferencia: '',
+                  como_te_enteraste: '',
+                  url_del_formulario: '', // se carga automáticamente
+                  procedencia: '',// se carga automáticamente
+                  user_agent_uuid: '',// se carga automáticamente
+                },
+                countries: [],
+                personal_id_types: [],
+                academic_degrees: [],
+                functions: [],
+                industries: [],
+                sending: false,
+                retry_sending_times: 3, // Cuántas veces queremos que se reintente enviar la data automáticamente, cuando se encuentra algún error.
+                attempted_sendings_count: 0, // Conteo de las veces que ya se intentó enviar la data antes de tener éxito: usado para los reintentos automáticos
+                seconds_before_next_attempt: 2, // Tiempo de espera entre reintentos
+              },
+              mounted: function() {
+                this.loadHiddenFields();
+              },
+            /*
+              watch: {
+                nueva_procedencia: function () {
+                  
+                }
+              },
+            */
+              computed: {
+                document_cookies: function() {
+                  var key_values_list = document.cookie.split('; ');
+                  var cookies_list = [];
+                  for (i = 0; i < key_values_list.length; i++) { 
+                      var current_key_and_value = key_values_list[i].split('=');
+                      cookies_list.push({
+                        key: current_key_and_value[0],
+                        value: current_key_and_value[1],
+                      })
+                  }
+                  return cookies_list;
+                },
+                nueva_procedencia: function() {
+                  if (this.form.source != '') {
+            // 				this.addTrafficSourceToForm();
+                    return this.form.source + '|>' + this.source_datetime + ')';
+                  }
+                  return '(cómo llegará a Formstack)';
+                },
+                procedencia: function() {
+                  return this.getCookieWithName("traffic_source");
+                },
+                user_agent_uuid: function() {
+                  // id = 'sdi_user_agent_uuid'
+                  return this.getCookieWithName("user_agent_uuid");
+                },
+                source_datetime: function() {
+                  var right_now = new Date();
+                  var date_of_click = new Date(right_now.getTime() - 10*60*1000);
+                  var currDate = date_of_click.getDate();
+                  var hours = date_of_click.getHours();
+                  var minutes = date_of_click.getMinutes();
+                  var month = date_of_click.getMonth() + 1;
+                  var year = date_of_click.getFullYear();
+                  var ampm = hours >= 12 ? 'pm' : 'am';
+                  hours = hours % 12;
+                  hours = hours ? hours : 12; // the hour '0' makes '12'
+                  minutes = minutes < 10 ? '0' + minutes : minutes;
+                  var strTime = currDate + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ' ' + ampm;
+                  return strTime;
+                },
+              },
+              methods: {
+                getCookieWithName: function(cookie_name) {
+                  var matches = this.document_cookies.filter(function(el) {
+                    return el.key == cookie_name;
+                  });
+                  if (matches.length > 0) {
+                    return matches[0].value;
+                  }
+                  return '';
+                },
+                loadHiddenFields: function(){
+                  // injects the traffic_source value to the form
+                  var elValorDeLaProcedencia = this.procedencia;
+                  if ((this.input_source_manually) && (this.form.source != '')) {
+                    elValorDeLaProcedencia = this.nueva_procedencia;
+                  }
+                  this.payload.procedencia = elValorDeLaProcedencia;
+                  this.payload.user_agent_uuid = this.user_agent_uuid;
+                  this.payload.url_del_formulario = window.location.href;
+                },
+                sendInformationRequest: function() {
+                  
+                  // ESTO ES PROPIAMENTE LO QUE SE ENVÍA + LA METADATA
+                  this.sending = true;
+                  var information_request = {
+                    timestamp: new Date().toJSON(), // FECHA Y HORA EXACTAS DEL ENVIO EN FORMATO JSON
+                    payload: this.payload,
+                  }
+                  
+                  // console.log(this.payload);
+                  var limit = informationRequest.retry_sending_times;
+                  var attempts_count = informationRequest.attempted_sendings_count;
+                  var miliseconds_delay = informationRequest.seconds_before_next_attempt * 1000;
+                  
+                  axios.post(
+                    'https://www.esanbackoffice.com/websites/products/information-request/',
+                    information_request
+                  )
+                    .then(function (response) {
+                      console.log(response.data);
+                      if (response.data.information_requested) {
+                        // Ir a la página de gracias
+                       window.location.href = 'https://www.esan.edu.pe/mails/prueba-nativa/2021/mba-online//gracias/';
+                        informationRequest.sending = false;
+                      } else {
+                        
+                        if (attempts_count < limit) {
+                          setTimeout(
+                            () => {
+                              informationRequest.attempted_sendings_count = attempts_count + 1
+                               console.log(informationRequest.attempted_sendings_count + ' retry attempts.')
+                              informationRequest.sendInformationRequest();
+                             },
+                             miliseconds_delay
+                           );
+                        } else {
+                          alert( "Hubo un error. Inténtalo de nuevo en unos minutos, por favor." ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
+                          informationRequest.sending = false;
+                          informationRequest.attempted_sendings_count = 0;
+                        }
+                      }
+                    })
+                    .catch(function (error) {
+                      console.log(error);
+                      if (attempts_count < limit) {
+                        setTimeout(
+                          () => {
+                            informationRequest.attempted_sendings_count = attempts_count + 1
+                             console.log(informationRequest.attempted_sendings_count + ' retry attempts.')
+                            informationRequest.sendInformationRequest();
+                           },
+                           miliseconds_delay
+                         );
+                      } else {
+                        alert( "Hubo un error. Inténtalo de nuevo en unos minutos, por favor." ); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
+                        informationRequest.sending = false;
+                        informationRequest.attempted_sendings_count = 0;
+                      }
+                    });
+                },
+              }
+            });
+            
+            axios.get(
+              'https://www.esanbackoffice.com/api/world/academic-degrees/?limit=100',
+              )
+              .then(function(response) {
+                informationRequest.academic_degrees = response.data.results;
+              })
+              .catch(function(error) {
+                console.log(error);
+              });
+              
+            axios.get(
+              'https://www.esanbackoffice.com/api/world/functions/?limit=100',
+              )
+              .then(function(response) {
+                informationRequest.functions = response.data.results;
+              })
+              .catch(function(error) {
+                console.log(error);
+              });
+              
+            axios.get(
+              'https://www.esanbackoffice.com/api/world/industries/?limit=100',
+              )
+              .then(function(response) {
+                informationRequest.industries = response.data.results;
+              })
+              .catch(function(error) {
+                console.log(error);
+              });
+              
+            axios.get(
+              'https://www.esanbackoffice.com/api/world/personal-id-types/?limit=100',
+              )
+              .then(function(response) {
+                informationRequest.personal_id_types = response.data.results;
+              })
+              .catch(function(error) {
+                console.log(error);
+              });
+            
+            
+            axios.get(
+              'https://www.esanbackoffice.com/world/api/countries/?limit=200',
+              )
+              .then(function(response) {
+                informationRequest.countries = response.data.results;
+              })
+              .catch(function(error) {
+                console.log(error);
+              });
+            
+               </script>
+
+
+  </div>
+  <!-- Body inner end -->
+</body>
+
+</html>
