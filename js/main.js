@@ -337,8 +337,8 @@ jQuery(function ($) {
       // slick on mobile
       if ($(window).width() > 576) {
         $carousel.slick({
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           mobileFirst: true,
           dots: true,
           autoplay: false,

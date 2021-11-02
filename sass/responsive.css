@@ -1,36 +1,9 @@
 /*==========================
 tab rotate 
 ===========================*/
-@media (min-width: 1200px) and (max-width: 1500px) {
-  .ts-sponsors .rk-box .white-rk img {
-    max-width: 210px;
-    margin: 15px auto 15px;
-  }
-  .ts-sponsors .sponsors-logo {
-    margin: 30px 0px 20px;
-  }
-}
-
 @media (min-width: 992px) and (max-width: 1200px) {
   section, .section-padding {
     padding: 65px 0px;
-  }
-  .ts-sponsors .rk-box .space {
-    max-width: 10px;
-  }
-  .ts-sponsors .rk-box .white-rk img {
-    margin: 18px auto 18px;
-  }
-  .ts-sponsors .sponsors-logo {
-    margin: 35px 10px;
-  }
-  .ts-sponsors .rk-box .white-rk p {
-    font-size: 18px;
-    line-height: 18px;
-    margin-bottom: 15px;
-  }
-  .porque_esan_container_mba_de_esan {
-    padding: 100px 20px;
   }
   .header ul.navbar-nav > li > a {
     padding: 0 10px;
@@ -110,19 +83,6 @@ tab device
   .pq_esan_icon_1, .pq_esan_icon_2, .pq_esan_icon_3, .pq_esan_icon_4 {
     width: 150px;
   }
-  .ts-schedule .col-two .box-content {
-    margin: auto;
-  }
-  .porque_esan_container_mba_de_esan {
-    padding: 70px 0px;
-  }
-  .porque_esan_section-2 {
-    margin-left: 377px;
-    padding: 40px 30px;
-  }
-  #beneficios .container {
-    max-width: 800px;
-  }
   .box-conteiner {
     padding: 10px;
   }
@@ -139,12 +99,6 @@ tab device
   }
   .box-conteiner .text {
     font-size: 18px;
-  }
-  .row-beneficios {
-    padding: 60px 0px;
-  }
-  .beneficios-title {
-    font-size: 40px;
   }
   .dropdown-menu.show {
     display: block;
@@ -319,12 +273,6 @@ tab device
     left: 0;
     top: 0;
   }
-  .ts-pricing-item {
-    margin-top: 85px;
-  }
-  .ts-pricing {
-    padding-bottom: 20px;
-  }
   .pricing-item,
   .location-form {
     margin-bottom: 50px;
@@ -370,9 +318,6 @@ tab device
   .single-contact-feature {
     margin-bottom: 30px;
   }
-  .ts-sponsors .sponsors-logo {
-    margin: 0px;
-  }
   .page-banner-title {
     padding: 0 20px;
   }
@@ -415,9 +360,6 @@ tab device
   .ts-book-seat .book-seat-content .section-title {
     font-size: 36px;
   }
-  .ts-sponsors.sponsors-border .sponsors-logo {
-    padding: 0 15px;
-  }
   .gallery-wrap .gallery-2 {
     margin: 0;
   }
@@ -450,11 +392,6 @@ tab device
 small device /mobile sm and large
 ===========================*/
 @media (max-width: 767px) {
-  .ts-sponsors .rk-box .white-rk h2 {
-    font-size: 35px;
-    line-height: 30px;
-    margin-bottom: 20px;
-  }
   .ts-speakers .col-text .text-direct {
     margin-bottom: 120px;
   }
@@ -727,18 +664,6 @@ small device /mobile sm and large
   .outcome-content .outcome-img img {
     width: 100%;
   }
-  .ts-schedule .col-two {
-    background-position: 73%;
-  }
-  .ts-schedule .col-one {
-    padding: 10px 0px 60px;
-  }
-  .ts-sponsors .col-one {
-    padding: 0px 0px 50px;
-  }
-  .ts-sponsors .col-one .section-title {
-    padding: 20px 0px 40px;
-  }
   .ts-funfact {
     padding: 60px 0 40px;
   }
@@ -751,23 +676,6 @@ small device /mobile sm and large
     margin: auto;
     right: 0;
   }
-  .ts-pricing-item {
-    margin-top: 80px;
-  }
-  .ts-pricing {
-    padding-bottom: 30px;
-  }
-  .ts-pricing.classic .ts-pricing-item {
-    -webkit-box-shadow: 0.799px 0 40px 0px rgba(0, 0, 0, 0.1);
-            box-shadow: 0.799px 0 40px 0px rgba(0, 0, 0, 0.1);
-  }
-  .ts-sponsors .sponsors-logo {
-    margin: 0;
-    min-height: 100px;
-  }
-  .ts-sponsors.sponsors-border {
-    padding: 40px 0;
-  }
   .ts-speakers,
   section,
   .ts-intro-item {
@@ -775,9 +683,6 @@ small device /mobile sm and large
   }
   .ts-speakers {
     padding-bottom: 0px;
-  }
-  #porque_mba {
-    background-image: url("../images/porque_mba/pq_esan_background-2.jpg");
   }
   .section-title,
   .column-title {
@@ -1072,17 +977,6 @@ small device /mobile sm and large
 }
 
 @media (max-width: 480px) {
-  .ts-sponsors .sponsors-logo {
-    padding: 0 20px;
-  }
-  .ts-sponsors .rk-box .white-rk h2 {
-    font-size: 30.5px;
-    line-height: 30px;
-    margin-bottom: 20px;
-  }
-  #beneficios .col {
-    padding: 1px;
-  }
   .navbar {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1104,29 +998,14 @@ small device /mobile sm and large
   .hero-area.content-left .banner-item .banner-content-wrap p.banner-info {
     font-size: 24px;
   }
-  .ts-schedule .col-two .box-content .box-mod .b-two h1 {
-    font-size: 95px;
-  }
-  .ts-schedule .col-two .box-content {
-    padding: 0px 0px 50px;
-  }
-  .beneficios-title {
-    font-size: 35px;
-  }
   .se_parte_title_second {
     font-size: 35px;
     line-height: 35px;
-  }
-  .ts-schedule .col-one .div-title span {
-    line-height: 48px;
   }
   .se_parte_image {
     content: url("../images/se_parte/img-62.jpg");
     background-repeat: no-repeat;
     width: 100%;
-  }
-  .ts-pricing.p-60 {
-    padding-top: 0px;
   }
   .row-se_parte {
     padding: 0px 0px 35px;
@@ -1139,9 +1018,6 @@ small device /mobile sm and large
   }
   .schedules-text-1 {
     padding-left: 0px;
-  }
-  .ts-schedule .col-one .div-title span {
-    font-size: 42px;
   }
   .section-title span, .column-title span {
     font-size: 40px !important;
