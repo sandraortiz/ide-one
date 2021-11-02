@@ -396,14 +396,18 @@
             text-transform: initial;
             margin-bottom: 20px;
             color: #FFFFFF;
-            font-size: 65px;
-            font-family: 'Quincy-bold';
+            font-size: 57px;
+            font-family: 'pressura-bold';
+            line-height: 57px;
+            span{
+               font-size: 85px;
+            }
          }
          .banner-info{
-            margin-bottom: 35px;
-            font-size: 44px;
-            font-family: 'Quincy-bold';
-            line-height: 39px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            font-family: 'raleway-regular';
+            line-height: 26px;
          }
       }
       .form-1{
@@ -982,62 +986,159 @@
  ts schedule 
  ===========================*/
 .ts-schedule {
-   position: relative;
-   background-color: #000000;
+   background-color: $white-color;
    height: auto;
-   padding: 0px;
-   .col-one{
-      max-width: 510px;
-      width: 100%;
-      padding: 120px 0px;
-      .div-title{
-         span{
-            font-size: 60px;
-            font-family: 'Quincy-bold';
-            line-height: 72px;
-
+   padding: 100px 0px;
+   .bloq-area{
+      padding: 70px 100px 10px;
+      margin-bottom: 40px;
+    
+      &.aeronautica{
+         background-color: $aeronautica;
+         background-image: url('../images/areas/aeronautico/bg-aeronautica.jpg');
+         .tab-1{
+            color: $aeronautica;
          }
-         small{
-            font-size: 20px;
-            font-weight: bold;
+         .btn-area{
+            background-color: $aero-light
          }
       }
-   }
-   .col-two{
-      background-image: url('../images/hero_area/kv-modalidad.jpg');
-      background-position: 30%;
-      background-size: cover;
-      // height: 100vh;
-      .box-content{
-         padding: 100px 0px;
+      &.agricola{
+         background-color: $agricola;
+         background-image: url('../images/areas/agricola/agricola.jpg');
+         .tab-1{
+            color: $agricola;
+         }
+         .btn-area{
+            background-color: $agri-light
+         }
+      }
+      &.alimentaria{
+         background-color: $alimentaria;
+         .tab-1{
+            color: $alimentaria;
+         }
+         .btn-area{
+            background-color: $ali-light
+         }
+      }
+      &.pesca{
+         background-color: $pesca;
+         .tab-1{
+            color: $pesca;
+         }
+         .btn-area{
+            background-color: $pesca-light
+         }
+      }
+      &.turismo{
+         background-color: $turismo;
+         .tab-1{
+            color: $turismo;
+         }
+         .btn-area{
+            background-color: $turis-light
+         }
+      }
+      &.veterinaria{
+         background-color: $veterinaria;
+         .tab-1{
+            color: $veterinaria;
+         }
+         .btn-area{
+            background-color: $vete-light
+         }
+      }
+      .tab{
+         max-width: 300px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border: 2px solid $white-color;
+         border-top-right-radius: 50px;
+         border-bottom-right-radius: 50px;
+         height: 70px;
+         .tab-1{
+            width: 220px;
+            padding-left:10px;
+            font-size: 34px;
+            text-transform: uppercase;
+            font-weight: bold;
+            background-color: $white-color;
+            height: inherit;
             display: flex;
-            flex-direction: column;
-         .box-mod{
-            background-color: rgba(228, 161, 56, 0.57);
-            height: 300px;
-            width: 450px;
-            padding: 50px 37px;
+            align-items: center;
+            font-family: 'pressura-bold';
+         }
+         .tab-2{
+            width: 80px;
+            text-align: center;
+         }
+      }
+      .btn-area{
+         max-width: 320px!important;
+         width: 100%;
+         color: $white-color;
+         text-decoration: none;
+         text-align: center;
+         height: 70px;
+         margin: auto;
+            border-radius: 40px;
+            border: 3px solid $white-color;
             display: flex;
-            flex-direction: row;
-            color: #F0C891;
-            .b-two{
-               h1{
-                  font-size: 115px;
-                  line-height: 85px;
-                  color: #F0C891;
-                  font-family: 'Quincy-bold';
-                  margin-bottom: 10px;
-               }
-               h2{
-                  font-size: 49px;
-                  color: #F0C891;
-                  font-family: 'Quincy-bold';
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-family: 'pressura-bold';
+         
+      }
+      .row-infor{
+         padding: 20px 25px!important;
+         .bloq-info{
+            padding: 20px 15px;
+            h3{
+               font-size: 21.5px;
+               color: $white-color;
+               font-family: 'pressura-bold';
+               text-transform: uppercase;
+            }
+            .img-area{
+               left: -37px;
+               position: relative;
+            }
+            strong{
+               font-family: 'raleway-bold';
+               font-size: 25px;
+            }
+            p{
+               margin-bottom: 0px;
+               font-family: 'raleway-regular';
+               font-size: 20px;
+               &.pd-align{
+                  margin-top: 19px;
                }
             }
-            
+            &.aeronautica{
+               background-color: $aero-light;
+            }
+            &.agricola{
+               background-color: $agri-light;
+            }
+            &.pesca{
+               background-color: $pesca-light;
+            }
+            &.turismo{
+               background-color: $turis-light;
+            }
+            &.veterinaria{
+               background-color: $vete-light;
+            }
          }
       }
-   }
+     
+     
+   }  
+   
 }
 /* ts-schedule-white */
 .ts-schedule-white *{
@@ -1374,46 +1475,64 @@
       }
 
    }
-   .item{
-
-   }
 }
 
 
 
 /*====================================
-      ts-pricing
+      section-certificate
 =====================================*/
-.ts-pricing {
-   @include background-content();
-
-   .speaker-shap {
-      .shap2 {
-         top: 150px;
-         bottom: auto;
-      }
+.section-certificate {
+   background-image: url('../images/sections/certificate/kv.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 100px 0px 100px;
+   position: relative;
+      overflow: hidden;
+   .logo{
+      content: url('../images/sections/certificate/logo.png');
+      margin: auto;
    }
-   &.p-60{
-      padding-top: 20px;
+   .section-title{
+      color: $white-color;
+      font-size: 30px;
    }
-   &-bg{
-       position: relative;
-       &::before{
-           position: absolute;
-           content: '';
-            background-color: transparent;
-            background-image: linear-gradient(144deg,rgba(68,63,198,.85) 0%,#ff007a 60%);
-            opacity: .95;
-            transition: 0.3s;
-            filter: brightness(57%) contrast(123%) saturate(100%) blur(0) hue-rotate(0deg);
-            width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
-       }
+   h1{
+      font-size: 700px;
+            line-height: 185px;
+            right: -84px;
+            top: -8px;
+            position: absolute;
+            color: rgba(255, 255, 255, 0.17);
+            font-family: 'pressura-bold';
    }
 }
 
+/*====================================
+      section-especializate
+=====================================*/
+.section-especializate{
+   background-color: $primary-color ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 100px 0px 100px;
+   position: relative;
+      overflow: hidden;
+      h1{
+         font-size: 700px;
+               line-height: 185px;
+               left: -80px;
+               top: -8px;
+               position: absolute;
+               color: rgba(255, 255, 255, 0.17);
+               font-family: 'pressura-bold';
+      }
+      p{
+         font-size: 25px;
+         font-family: 'raleway-regular';
+         max-width: 690px;
+      }
+}
 .pricing-dot {
    width: 100%;
    display: block;
@@ -1442,268 +1561,20 @@
    }
 }
 
-.ts-pricing-box {
-   background: $white-color;
-   padding: 40px;
-   text-align: center;
-   @include transition();
-
-   &:hover {
-      box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.4);
-   }
-
-   .ts-pricing-header {
-      .ts-pricing-name {
-         font-size: 20px;
-         font-weight: 800;
-         color: $secondary-color;
-         text-transform: uppercase;
-         margin-bottom: 15px;
-      }
-
-      .ts-pricing-price {
-         font-size: 58px;
-         font-weight: 900;
-         color: $secondary-color;
-         margin-bottom: 20px;
-
-         span {
-            margin-right: 10px;
-         }
-      }
-
-   }
-
-   .ts-pricing-progress {
-      .ts-pricing-value {
-         font-weight: 700;
-         color: $primary-color;
-         margin-bottom: 25px;
-      }
-   }
-
-   .ts-progress {
+/*====================================
+      section-networking
+=====================================*/
+.section-networking{
+   background-image: url('../images/sections/networking/kv.jpg');
+   .content{
+      max-width: 590px;
       width: 100%;
-      height: 10px;
-      background: #ebedf4;
-      margin-bottom: 10px;
-
-      .ts-progress-inner {
-         background-image: linear-gradient(144deg, rgb(50, 21, 117) 0%, rgb(141, 11, 147) 51%, rgb(255, 0, 102) 100%, rgb(255, 5, 124) 100%);
-         height: 100%;
-      }
+      margin: auto;
+    
    }
-
-   .promotional-code {
-      .promo-code-text {
-         font-weight: 400;
-         color: $primary-color;
-      }
-   }
-
-   .pricing-btn {
-      margin-bottom: 25px;
-      position: relative;
-
-      &:before,
-      &:after {
-         @include absolute(absolute, -14px, 0);
-         content: '';
-         width: 25px;
-         height: 25px;
-         display: block;
-         background: #fff;
-         @include border-radius(50%);
-         bottom: 0;
-         margin: auto;
-      }
-
-      &:after {
-         @include absolute(absolute, auto, 0);
-         right: -14px;
-      }
-   }
-
-   .vate-text {
-      margin-bottom: 0;
-   }
-}
-
-// index 3
-.ts-pricing-item {
-   text-align: center;
-   background: $white-color;
-   @include border-radius(5px);
-   padding: 40px;
-   margin-top: 50px;
-
-   .ts-pricing-header {
-      i {
-         font-size: 70px;
-         height: 160px;
-         width: 160px;
-         @include border-radius(50%);
-         display: block;
-         margin: auto;
-         background: $secondary-color;
-         color: $white-color;
-         padding: 45px 0;
-         margin-top: -100px;
-         margin-bottom: 40px;
-      }
-
-   }
-
-   .ts-pricing-name {
-      font-size: 24px;
-      font-weight: 700;
-      color: $secondary-color;
-      margin-bottom: 35px;
-   }
-
-   .ts-pricing-price {
-      font-size: 48px;
-      font-weight: 800;
-      position: relative;
-      margin-bottom: 50px;
-
-      img {
-         position: absolute;
-         left: 0;
-         right: 0;
-         bottom: 0;
-         margin: auto;
-         text-align: center;
-         top: 0;
-      }
-
-      span {
-         position: relative;
-         z-index: 1;
-         color: $secondary-color;
-      }
-   }
-
-   p {
-      margin-bottom: 30px;
-   }
-
-   .btn {
-      background: $secondary-color;
-   }
-
-   &.disebled {
-      cursor: no-drop;
-      opacity: .7;
-
-      .ts-pricing-header {
-         i {
-            background: #e7e7e7;
-         }
-
-         .ts-pricing-name {
-            color: #cccccc;
-
-         }
-      }
-
-      .ts-pricing-price span {
-         opacity: .5;
-      }
-
-      .btn {
-         background: #e7e7e7;
-      }
-   }
-
-   &.active {
-
-      .ts-pricing-header i,
-      .btn {
-         background: $primary-color;
-      }
-
-      .ts-pricing-name,
-      .ts-pricing-price span {
-         color: $primary-color;
-      }
-   }
-}
-
-.ts-pricing {
-   &.classic {
-      .ts-pricing-item {
-         box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1);
-
-      }
-   }
-}
-
-// index 4
-.pricing-wrap{
-   .pricing-item{
-      .ts-pricing-box{
-         background: $blue-bg;
-            .ts-pricing-name,
-            .ts-pricing-price,
-            .amount-progres-text,
-            .vate-text{
-               color: $white-color;
-            }
-            .pricing-btn:before,
-            .pricing-btn:after{
-               background: $blue-bg;
-            }
-      }
-   }
-}
-
-/*=================================
-   blog
- =================================*/
-.ts-blog {
-   padding-bottom: 70px;
-
-   .speaker-shap {
-      .shap2 {
-         top: 200px;
-         bottom: auto;
-      }
-      .shap1 {
-        top:auto;
-        bottom: 25%;
-      }
-   }
-
-   .post {
-
-      .post-body {
-         box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
-
-         .entry-header {
-            .entry-title {
-               font-size: 24px;
-               font-weight: 700;
-
-            }
-         }
-      }
-
-      &:hover {
-         .post-body {
-            box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
-         }
-      }
-      &.white-text{
-         .post-body{
-            background: $blue-bg;
-            .entry-header .entry-title a,
-            .entry-content p,
-            .post-footer .btn-link{
-               color: $white-color;
-            }
-         }
-      }
+   .section-title{
+      color: $white-color;
+      font-size: 30px;
    }
 }
 
@@ -2582,99 +2453,6 @@
    }
 }
 
-/* Sponsors
-================================================== */
-
-.ts-sponsors {
-   background-image: url('../images/hero_area/kv-rk.jpg');
-   height: auto;
-   background-size: cover;
-   .col-one{
-      max-width: 510px;
-      width: 100%;
-      padding: 120px 0px;
-      .section-title{
-         padding: 160px 0px 40px; 
-      }
-      
-   }
-   .rk-box{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 100%;
-      .white-rk{
-         background-color: #FFFFFF;
-         margin: 0px;
-         max-width: 448px;
-         width: 100%;
-         color: $gray-color;
-         border-bottom: 6px solid transparent;
-         border-image: url('../images/footer/footer-bor.png') 30 30 round;
-         text-align: center;
-         img{
-            margin: 30px auto 30px;
-           
-         }
-         p{
-            
-            max-width: 342px;
-            width: 100%;
-            font-weight: 500;
-            color: $gray-color;
-            line-height: 32px;
-            margin-bottom: 32px;
-         }
-         
-      }
-      .space{
-         max-width: 50px;
-         width: 100%;
-      }
-   }
-   
-   .sponsor-padding {
-      padding-left: 30px;
-      padding-right: 30px;
-   }
-
-   .sponsor-title {
-      max-width: 750px;
-      margin: 0 auto;
-
-      display: block;
-   }
-
-   .sponsors-logo {
-      margin: 60px 0;
-      // background: #f7f7f7;
-      min-height: 125px;
-      padding: 0 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-
-      img {
-         -webkit-filter: grayscale(100%);
-         filter: grayscale(100%);
-      }
-
-      &:hover {
-         img {
-            filter: none;
-         }
-      }
-   }
-   &.sponsors-border{
-      padding: 0;
-     
-      .sponsors-wrap{
-         border-bottom: 1px solid #2e2b72;
-      }
-   }
-}
 
 
 
@@ -3457,18 +3235,7 @@ blockquote:before {
     }
     
   }  
-  .ts-sponsors .rk-box .white-rk{
-     margin: auto;
-  }
-  .ts-sponsors-content{
-    padding-right: 15px !important
-  }
-  .ts-sponsors{
-   background-image: url('../images/hero_area/kv-rk2.jpg') !important;
-   background-repeat: no-repeat;
-   background-position: top center;
-   background-color: #A39FA0;
-  }
+ 
 // section-1
   .hero-area.content-left{
     background-image: url('../images/section-1/section-1-mobile.jpg') !important
@@ -3508,230 +3275,56 @@ blockquote:before {
 
 /*------------porque esan-------------*/
 
-.porque_esan_mobile_mba_de_esan{
-  display: none;
-}
-.porque_esan_title-section {
-  font-size: 45px;
-  font-family: 'Quincy-bold';
-  line-height: 42px;
-  margin-bottom: 20px;
-}
-
-.porque_esan_section-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.porque_esan_section-1 {
-  position: absolute;
-  z-index: 1;
-  width: 40%;
-  height: 70%;
-  font-size: 20px;
-  margin-right: 400px;
-  margin-top: -55px;
-  font-weight: bold;
-  line-height: 182px;
-}
-
-.porque_esan_section-2 {
-  // background-color: var(--bg-color-button);
-  position: relative;
-  z-index: 2;
-  margin-top: -45px;
-  font-weight: bold;
-  margin-left: 500px;
-  padding: 65px 55px;
-  color:white;
-  background-color:#000000;
-  border: 2px solid transparent;
-  border-image: url('../images/porque_esan/line-borde.png') 30 round;
-}
-.porque_esan_section-3 {
-  // background-color: var(--bg-color-button);
-  // position: relative;
-  // z-index: 2;
-  margin-top: 45px;
-  // font-weight: bold;
-  // margin-left: 500px;
-  padding: 15px;
-  // color:white;
-  background-color:#000000;
-  border: 2px solid transparent;
-  border-image: url('../images/porque_esan/line-borde.png') 30 round;
-}
-
-.porque_esan_container_mba_de_esan {
-  padding: 100px;
-}
-#porque_esan{
-  background-color : #D8D8D8
-}
-.pq_esan_carrousel{
-  margin-left: 40px;
-}
-/*------------beneficios-------------*/
-
-#beneficios {
-  background-color: #282022;
-  color: white;
-  padding: 55px 0px;
-}
-
-.beneficios_div{
-  background-image: url('../images/beneficios/beneficios-bor.png');
-  height: 2px;
-  width: 500px;
-  opacity: 1  ;
-  margin-left: -250px;
-}
-
-.text-lideres, .text-house{
-  padding-bottom : 27px !important
-}
- 
-.inter-logo {
-  content: url('../images/beneficios/internet-icon.png');
-  background-repeat:no-repeat
-}
- 
-.box-icon {
-  content: url('../images/beneficios/box-icon.png');
-  background-repeat:no-repeat
-}
- 
-.house-icon {
-  content: url('../images/beneficios/house-icon.png');
-  background-repeat:no-repeat
-}
-  
-.world-icon {
-  content: url('../images/beneficios/world-icon.png');
-  background-repeat:no-repeat
-}
-  
-.box-conteiner {
-  background-color: #58595B;
-  padding-left: 30px;
-  border: 2px solid transparent;
-  border-top:0;
-  border-left:0;
-  border-right:0;
-  border-image: url('../images/beneficios/box-border.png') 30 round;
-  // padding-right: 10px;
-
-  .logo {
-    padding-top: 80px;
-    width: 15%;
-    // padding-bottom: 20px;
-  }
-
-  .text {
-    padding-bottom: 20px;
-    font-family: 'Quincy-bold';
-    font-size: 21px;
-  }
-}
-.row-beneficios {
-  padding: 60px
-}
-.beneficios-title{
-  font-size: 45px;
-  line-height: 1;
-  font-family: 'Quincy-bold';
-}
-  
-// Se parte - section
-.title-responsive{
-  display: none;
-}
-.se_parte_image {
-  content: url('../images/se_parte/img-6.jpg');
-  background-repeat:no-repeat;
-  width: 100%
-}
-#se_parte{
-  background-color: white;
-}  
-.row-se_parte {
-  padding:80px
-}
-  
-.se_parte_title {
-  color: #E4A137;
-  font-size: 25px;
-  padding-left: 20px;
-  font-family: 'Quincy-bold';
-}
-  
-.se_parte_title_second{
-   font-size: 45px;
-   line-height: 45px;
-}
- 
-.se_parte__div{
-  background-image: url('../images/se_parte/se_parte_div.png');
-  height: 2px;
-  width: 470px;
-  opacity: 1  
-}
-
-.se_parte_text{
-  color: black
-}
-// Porque mba - section
-
-
-.row-porque_mba {
-  padding: 60px;
-  color: white;
-  padding-bottom: 100px;
-  padding-top: 100px; 
-
-}
-#porque_mba {
-  background-image: url('../images/porque_mba/pq_esan_background-1.jpg');
-  background-size: cover;
-  position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-bottom: -80px;
-}
-  
-.porque_mba_title{
-  font-size: 40px;
-  line-height:0.9;
-  font-family: 'Quincy-bold';
-}
-.porque_mba_subtitle{
-  font-size: 30px;
-}
-// carrusel-content
-.carrusel-text{
-  padding-top: 40px;
-}
-.carrusel-content {
-  background-color: #D8D8D8;
-  color:#58595B;
-  padding-top: 2px;
-  position: initial;
-}
-.border-content{
-  border-width: 0;
-  border-right: 2px solid;
-  border-image: url('../images/porque_mba/pq_esan_div.png') 0 100%;
-  // padding-top: 100px;
-}
-.text-content{ 
-  padding-right: 40px;
-}
-.expositor_1, .expositor_2, .expositor_3, 
+.carrusel-content{
+   background-color: $gray-color ;
+   .ts-speakers {
+      padding-top: 100px;
+      padding-bottom: 80px;
+      position: relative;
+      overflow: hidden;
+      color: $gray-color;
+      height: auto;
+      display: flex;
+      align-items: flex-end;
+      background-color: $gray-color;
+      overflow-y: hidden;
+      .col-text{
+         font-size: 30px;
+         .section-title{
+            color: $white-color;
+            text-align: center;
+            font-size: 70px;
+         }
+         
+         h1{
+            font-size: 700px;
+            line-height: 185px;
+            left: -84px;
+            top: -8px;
+            position: absolute;
+            color: rgba(255, 255, 255, 0.17);
+            font-family: 'pressura-bold';
+         }
+         .text-direct{
+            margin-bottom: 10px;
+            p{
+               font-family: 'raleway-regular';
+            }
+         }
+      }
+   }
+   .item-slide{
+      .name-expositor{
+         font-size: 20.6px;
+         font-family: 'raleway-bold';
+      }
+   }
+   .expositor_1, .expositor_2, .expositor_3, 
 .expositor_4, .expositor_5, .expositor_6,
 .expositor_7, .expositor_8, .expositor_9,
 .expositor_10, .expositor_11, .expositor_12{
    width: 360px;
+   margin: auto;
 }  
 .expositor_1 {
   content: url('../images/expositores/William-Arteaga.png');
@@ -3761,7 +3354,7 @@ blockquote:before {
    content: url('../images/expositores/Rocio-Maradiegue.png');
  } 
  .expositor_9{
-   content: url('../images/expositores/maria-benavente.png');
+   content: url('../images/expositores/Maria-Benavente.png');
  } 
  .expositor_10{
    content: url('../images/expositores/Jorge-Hun.png');
@@ -3771,15 +3364,23 @@ blockquote:before {
  } 
  .expositor_12{
    content: url('../images/expositores/Enrique-Avendaño-.png');
- } 
-.pq_esan_title{
-  font-size: 25px;
-  line-height: 32px;
-  font-family: 'raleway-bold';
-}
-.pq_esan_p{
-   font-size: 21px;
  }
+ p{
+    text-align: center;
+ }
+}
+/*------------beneficios-------------*/
+
+
+
+.text-lideres, .text-house{
+  padding-bottom : 27px !important
+}
+ 
+
+
+
+
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background:#58595B !important ;
   width:12px;
@@ -3857,11 +3458,6 @@ blockquote:before {
   flex-direction: row;
   justify-content: space-around;
 }
-.ts-sponsors .rk-box .white-rk h2 {
-   font-family: 'Quincy-bold';
-   font-size: 42px;
-   line-height: 38px;
-}
 @media (max-width: 767px) {
   .schedules-1{
     display: block;
@@ -3878,64 +3474,14 @@ blockquote:before {
   .expositor_1 , .expositor_2 ,.expositor_3, .expositor_4 {
     width:150px 
   }
-  #porque_mba{
-  margin-bottom:0px !important
-  }
-
-  .carrusel-text{
-    padding-top: 10px;
-  }
-  // porque esan
-
-  .pq_esan_carrousel{
-    margin-left: 0px;
-  }
-  .porque_esan_container_mba_de_esan{
-    padding: 40px;
-  }
-  .porque_esan_image img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  .porque_esan_desktop_mba_de_esan{
-    display: none;
-  }
-  .porque_esan_mobile_mba_de_esan{
-    display: block;
-  }
-  .border-content {
-    border-right: 0px solid;
-  }
-  .carrusel-content{
-    padding-bottom: 10px;
-    padding-top: 30px;
-  }
+  
+  
   .text-content{ 
     padding-right: 20px;
     padding-left: 20px;
   }
-  // porque mba
-  .row-porque_mba{
-    padding-left:10px;
-    padding: 30px;
-  }
-  .porque_mba_text{
-    padding-top: 30px;
-    p{
-       font-size: 20px;
-    }
-  }
-  .porque_esan_section-3{
-     margin-top: 0px;
-  }
-  .box-conteiner .logo{
-     width: 45%;
-     max-width: 71px;
-  }
-  .box-conteiner{
-   padding-left: 10px;
-   max-width: 250px;
-  }
+
+ 
   // se parte
   .row-se_parte{
     padding: 30px 0px;
@@ -3954,12 +3500,5 @@ blockquote:before {
     padding-top:20px
   }
 
-  // beneficios
 
-  .beneficios_div{
-    display: none;
-  }
-  .row-beneficios{
-    padding: 30px;
-  }
 }

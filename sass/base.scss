@@ -155,7 +155,6 @@ a.read-more {
 
 section,
 .section-padding {
-    padding: 100px 0;
     position: relative;
 }
 .section-bg{
@@ -323,17 +322,12 @@ img.pull-right {
 // default title set
 .section-title,
 .column-title{
-   font-family: 'Quincy-bold';
-   font-size: 36px;
+   font-family: 'pressura-bold';
    font-weight: 500;
    color:  $primary-color;
    position: relative;
    padding-bottom: 30px;
-   margin-bottom: 50px;
-   margin-left: 20px;
    line-height: 45px;
-   max-width: 536px;
-   width: 100%;
    &:after{
       @include absolute();
       content: '';
