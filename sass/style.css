@@ -4002,5 +4002,23 @@ blockquote:before {
   .se_parte_content {
     padding-top: 20px;
   }
+  .beneficios_div {
+    display: none;
+  }
+  .row-beneficios {
+    padding: 30px;
+  }
+}
+
+.color-body {
+  background-color: #000;
+  color: white;
+  height: 100;
+  font-family: 'raleway-regular';
+}
+
+.table {
+  color: white !important;
+  font-family: 'raleway-regular';
 }
 /*# sourceMappingURL=style.css.map */

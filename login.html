@@ -60,292 +60,54 @@
 
 </head>
 
-<body>
-  <form id="form-login">
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="login-password">
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+<body class="color-body">
 
-  <script src="js/jquery.js"></script>
+  <div class="container h-100">
+    <div class="row min-vh-100 justify-content-center align-items-center">
+      <form id="form-login" class="col-8">
+        <div class="form-group">
+          <label for="formGroupExampleInput">Correo electronico</label>
+          <input type="text" class="form-control"  id="login-email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="login-password">
+        </div>
+        <button type="submit" class="btn btn-secondary">Iniciar sesion</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="./js/jquery.js"></script>
 
-  <script src="js/popper.min.js"></script>
+  <script src="./js/popper.min.js"></script>
   <!-- Bootstrap jQuery -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
   <!-- Counter -->
-  <script src="js/jquery.appear.min.js"></script>
+  <script src="./js/jquery.appear.min.js"></script>
   <!-- Countdown -->
-  <script src="js/jquery.jCounter.js"></script>
+  <script src="./js/jquery.jCounter.js"></script>
   <!-- magnific-popup -->
-  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="./js/jquery.magnific-popup.min.js"></script>
   <!-- carousel -->
-  <script src="js/owl.carousel.min.js"></script>
-
+  <script src="./js/owl.carousel.min.js"></script>
   <!-- Waypoints -->
-  <script src="js/wow.min.js"></script>
-
+  <script src="./js/wow.min.js"></script>
   <!-- isotop -->
-  <script src="js/isotope.pkgd.min.js"></script>
-  <script src="js/slick.min.js"></script>
+  <script src="./js/isotope.pkgd.min.js"></script>
+  <script src="./js/slick.min.js"></script>
   <!-- Template custom -->
-  <script src="js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"
     integrity="sha256-TaLceMwjWRqe4yhbqPOJH6V7UGt5AvvdNfpaIXJWbFU=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"
     integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
-  <script type="application/javascript"
-    src="https://www.esan.edu.pe/estaticos/2019/js/user_agent.js?v=0.32&datetime=2019-10-04PET18:33:27"></script>
+
 
   <!-- El siguiente script está en el Google Tag Manager, así que debe ser omitido en producción para no redundar en las fuentes de tráfico -->
   <script type="application/javascript"
     src="https://www.esan.edu.pe/backoffice/muestras/traffic_source_cookie.js"></script>
-  <!-- <script type="text/javascript">
-    var informationRequest = new Vue({
-      el: '#application-root',
-      data: {
-        payload: {
-          /* 
-            Los valores iniciales son para las pruebas. Una vez publicado los textos los puedes cambiar por '' y los números enteros por 0. 
-            Las filas comentadas son de campos opcionales (no están todos).
-            Para una lista completa de campos disponibles, referirse a la documentación del *endpoint*.
-          */
-          nombres: '',
-          apellido_paterno: '',
-          // 	apellido_materno: '', 
-          // 	tipo_de_id,
-          numero_de_id: '',
-          ciudad_de_residencia: '',
-          // 	edad,
-          academic_degree_code: null,
-          // 	exalumno,
-          correo_electrnico: '',
-          telefono: '',
-          acepta_politica_de_privacidad: 0,
-          empresa: '',
-          job_industry_code: 'EDU',
-          cargo: '',
-          job_function_code: 'MKT',
-          ciudad: 'Lima', // debe inicializarse, aquí; en javascript después; o, en última instancia, presentar opciones en el HTML para que el usuario elija
-          programa: 'MBA Tiempo Parcial', // igual que *ciudad*
-          // 	curso,
-          consulta: '',
-          // 	meses_para_llevarlo,
-          conferencia: 0,
-          datos_de_la_conferencia: '',
-          como_te_enteraste: '',
-          url_del_formulario: '', // se carga automáticamente
-          procedencia: '',// se carga automáticamente
-          user_agent_uuid: '',// se carga automáticamente
-        },
-        countries: [],
-        personal_id_types: [],
-        academic_degrees: [],
-        functions: [],
-        industries: [],
-        sending: false,
-        retry_sending_times: 3, // Cuántas veces queremos que se reintente enviar la data automáticamente, cuando se encuentra algún error.
-        attempted_sendings_count: 0, // Conteo de las veces que ya se intentó enviar la data antes de tener éxito: usado para los reintentos automáticos
-        seconds_before_next_attempt: 2, // Tiempo de espera entre reintentos
-      },
-      mounted: function () {
-        this.loadHiddenFields();
-      },
-      /*
-        watch: {
-          nueva_procedencia: function () {
-            
-          }
-        },
-      */
-      computed: {
-        document_cookies: function () {
-          var key_values_list = document.cookie.split('; ');
-          var cookies_list = [];
-          for (i = 0; i < key_values_list.length; i++) {
-            var current_key_and_value = key_values_list[i].split('=');
-            cookies_list.push({
-              key: current_key_and_value[0],
-              value: current_key_and_value[1],
-            })
-          }
-          return cookies_list;
-        },
-        nueva_procedencia: function () {
-          if (this.form.source != '') {
-            // 				this.addTrafficSourceToForm();
-            return this.form.source + '|>' + this.source_datetime + ')';
-          }
-          return '(cómo llegará a Formstack)';
-        },
-        procedencia: function () {
-          return this.getCookieWithName("traffic_source");
-        },
-        user_agent_uuid: function () {
-          // id = 'sdi_user_agent_uuid'
-          return this.getCookieWithName("user_agent_uuid");
-        },
-        source_datetime: function () {
-          var right_now = new Date();
-          var date_of_click = new Date(right_now.getTime() - 10 * 60 * 1000);
-          var currDate = date_of_click.getDate();
-          var hours = date_of_click.getHours();
-          var minutes = date_of_click.getMinutes();
-          var month = date_of_click.getMonth() + 1;
-          var year = date_of_click.getFullYear();
-          var ampm = hours >= 12 ? 'pm' : 'am';
-          hours = hours % 12;
-          hours = hours ? hours : 12; // the hour '0' makes '12'
-          minutes = minutes < 10 ? '0' + minutes : minutes;
-          var strTime = currDate + '-' + month + '-' + year + ' ' + hours + ':' + minutes + ' ' + ampm;
-          return strTime;
-        },
-      },
-      methods: {
-        getCookieWithName: function (cookie_name) {
-          var matches = this.document_cookies.filter(function (el) {
-            return el.key == cookie_name;
-          });
-          if (matches.length > 0) {
-            return matches[0].value;
-          }
-          return '';
-        },
-        loadHiddenFields: function () {
-          // injects the traffic_source value to the form
-          var elValorDeLaProcedencia = this.procedencia;
-          if ((this.input_source_manually) && (this.form.source != '')) {
-            elValorDeLaProcedencia = this.nueva_procedencia;
-          }
-          this.payload.procedencia = elValorDeLaProcedencia;
-          this.payload.user_agent_uuid = this.user_agent_uuid;
-          this.payload.url_del_formulario = window.location.href;
-        },
-        sendInformationRequest: function () {
-
-          // ESTO ES PROPIAMENTE LO QUE SE ENVÍA + LA METADATA
-          this.sending = true;
-          var information_request = {
-            timestamp: new Date().toJSON(), // FECHA Y HORA EXACTAS DEL ENVIO EN FORMATO JSON
-            payload: this.payload,
-          }
-
-          // console.log(this.payload);
-          var limit = informationRequest.retry_sending_times;
-          var attempts_count = informationRequest.attempted_sendings_count;
-          var miliseconds_delay = informationRequest.seconds_before_next_attempt * 1000;
-
-          axios.post(
-            'https://www.esanbackoffice.com/websites/products/information-request/',
-            information_request
-          )
-            .then(function (response) {
-              console.log(response.data);
-              if (response.data.information_requested) {
-                // Ir a la página de gracias
-                window.location.href = 'https://www.esan.edu.pe/mails/prueba-nativa/2021/mba-online//gracias/';
-                informationRequest.sending = false;
-              } else {
-
-                if (attempts_count < limit) {
-                  setTimeout(
-                    () => {
-                      informationRequest.attempted_sendings_count = attempts_count + 1
-                      console.log(informationRequest.attempted_sendings_count + ' retry attempts.')
-                      informationRequest.sendInformationRequest();
-                    },
-                    miliseconds_delay
-                  );
-                } else {
-                  alert("Hubo un error. Inténtalo de nuevo en unos minutos, por favor."); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
-                  informationRequest.sending = false;
-                  informationRequest.attempted_sendings_count = 0;
-                }
-              }
-            })
-            .catch(function (error) {
-              console.log(error);
-              if (attempts_count < limit) {
-                setTimeout(
-                  () => {
-                    informationRequest.attempted_sendings_count = attempts_count + 1
-                    console.log(informationRequest.attempted_sendings_count + ' retry attempts.')
-                    informationRequest.sendInformationRequest();
-                  },
-                  miliseconds_delay
-                );
-              } else {
-                alert("Hubo un error. Inténtalo de nuevo en unos minutos, por favor."); // en lugar de una alerta, puede ser más claro para el usuario levantar un modal
-                informationRequest.sending = false;
-                informationRequest.attempted_sendings_count = 0;
-              }
-            });
-        },
-      }
-    });
-
-    axios.get(
-      'https://www.esanbackoffice.com/api/world/academic-degrees/?limit=100',
-    )
-      .then(function (response) {
-        informationRequest.academic_degrees = response.data.results;
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-
-    axios.get(
-      'https://www.esanbackoffice.com/api/world/functions/?limit=100',
-    )
-      .then(function (response) {
-        informationRequest.functions = response.data.results;
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-
-    axios.get(
-      'https://www.esanbackoffice.com/api/world/industries/?limit=100',
-    )
-      .then(function (response) {
-        informationRequest.industries = response.data.results;
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-
-    axios.get(
-      'https://www.esanbackoffice.com/api/world/personal-id-types/?limit=100',
-    )
-      .then(function (response) {
-        informationRequest.personal_id_types = response.data.results;
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-
-
-    axios.get(
-      'https://www.esanbackoffice.com/world/api/countries/?limit=200',
-    )
-      .then(function (response) {
-        informationRequest.countries = response.data.results;
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-
-  </script> -->
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
