@@ -50,7 +50,7 @@
    }
 }
 .header {
-   background-color: #000000;
+   background-color: $primary-color;
    .navbar {
       padding: 30px 0;
    }
@@ -102,15 +102,12 @@
                background: #00c1c1;
                margin-left: 30px;
 
-               &:hover {
-                  background: $primary-color;
-               }
 
             }
          }
          &.active{
             .ts-scroll{
-               color: $primary-color!important;
+               color: $white-color!important;
                font-weight: bold;
                font-size: 20px;
             }
@@ -275,7 +272,6 @@
 
                   &:hover {
                      box-shadow: none;
-                     background: $primary-dark;
                   }
                }
             }
@@ -411,29 +407,44 @@
          }
       }
       .form-1{
-         background-color: #000000;
+         background-color: rgba(139, 143, 157, 0.47);
          padding: 120px 68px;
          max-width: 490px;
          width: 100%;
          margin: auto;
+         ::placeholder { color: $white-color; }
          input, select{
-            background-color: #232222;
-            border: 1.6px solid $primary-color;
-            color: #ced4da;
+            background-color: #71747C;
+            border: 2.3px solid $white-color;
+            color: $white-color;
           
             
-            border-radius: 3px;
+            border-radius: 10px;
          }
          .form-check{
             font-size: 14px;
          }
          select{
-            color: #6C757C;
+            color: $white-color;
             padding-left: 9px;
             font-size: 15.9px;
             height: 45px;
             width: 100%;
          }
+         select:focus{ outline: none !important}
+
+      }
+      .box-select::after{
+         content:"\025be";
+         display:table-cell;
+         padding-top:7px;
+         text-align:center;
+         width:30px;
+         height:30px;
+         background-color:#d9d9d9;
+         top:-20px;
+         right:0px;	
+         pointer-events: none;
       }
    }
 }
@@ -696,33 +707,42 @@
      ts speaker
 ===========================*/
 .ts-speakers {
-   padding-top: 120px;
-   padding-bottom: 0px;
+   padding-top: 100px;
+   padding-bottom: 80px;
    position: relative;
    overflow: hidden;
-   background-image: url('../images/hero_area/kv-direct.jpg');
+   background-color: $white-color;
+   color: $gray-color;
    height: auto;
    display: flex;
    align-items: flex-end;
    .col-one{
-      position: relative;
-      img{
-         position: relative;
-         z-index: 2;
+      display: flex;
+      align-items: center;
+      .part-col{
+         border-right: 2px solid $primary-color;
       }
+     .section-title{
+        color: $gray-color;
+     }
    }
    .col-text{
+      font-size: 30px;
+      
       h1{
-         font-size: 170px;
-         line-height: 131px;
-         left: -64px;
-         bottom: -17px;
+         font-size: 700px;
+         line-height: 185px;
+         right: -64px;
+         top: -78px;
          position: absolute;
-         color: rgba(228, 161, 56, 0.17);
-         font-family: 'Quincy-bold';
+         color: rgba(220, 9, 51, 0.17);
+         font-family: 'pressura-bold';
       }
       .text-direct{
-         margin-bottom: 220px;
+         margin-bottom: 10px;
+         p{
+            font-family: 'raleway-regular';
+         }
       }
    }
 }
@@ -2208,7 +2228,7 @@
       ts-footer
  ==================================*/
 .ts-footer {
-   background: #000000;
+   background: $primary-color;
    padding: 250px 0 50px;
 }
 
@@ -3387,7 +3407,6 @@ blockquote:before {
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
-  border-top: 20px solid transparent;
   border-image: url('../images/footer/footer-bor.png') 30 30 round;
 }
 
@@ -3708,29 +3727,55 @@ blockquote:before {
 .text-content{ 
   padding-right: 40px;
 }
-  
-.pq_esan_icon_1 {
-  content: url('../images/porque_mba/pq_esan_icon_1.png');
-  width: 160px
+.expositor_1, .expositor_2, .expositor_3, 
+.expositor_4, .expositor_5, .expositor_6,
+.expositor_7, .expositor_8, .expositor_9,
+.expositor_10, .expositor_11, .expositor_12{
+   width: 360px;
+}  
+.expositor_1 {
+  content: url('../images/expositores/William-Arteaga.png');
+  width: 360px
 }
  
-.pq_esan_icon_2{
-  content: url('../images/porque_mba/pq_esan_icon_2.png');
-  width: 160px
+.expositor_2{
+  content: url('../images/expositores/Jorge-Sandoval.png');
 }
   
-.pq_esan_icon_3{
-  content: url('../images/porque_mba/pq_esan_icon_3.png');
-  width: 160px
+.expositor_3{
+  content: url('../images/expositores/Walter-Reategui.png');
 }
-.pq_esan_icon_4{
-   content: url('../images/porque_mba/pq_esan_icon_44.png');
-   width: 160px
+.expositor_4{
+   content: url('../images/expositores/Octavio-Chirinos.png');
+ } 
+ .expositor_5{
+   content: url('../images/expositores/Isaac-Zuñiga.png');
+ } 
+ .expositor_6{
+   content: url('../images/expositores/Luis-Torres.png');
+ } 
+ .expositor_7{
+   content: url('../images/expositores/Gonzalo-Perez.png');
+ } 
+ .expositor_8{
+   content: url('../images/expositores/Rocio-Maradiegue.png');
+ } 
+ .expositor_9{
+   content: url('../images/expositores/maria-benavente.png');
+ } 
+ .expositor_10{
+   content: url('../images/expositores/Jorge-Hun.png');
+ } 
+ .expositor_11{
+   content: url('../images/expositores/Fiorella-Cochella.png');
+ } 
+ .expositor_12{
+   content: url('../images/expositores/Enrique-Avendaño-.png');
  } 
 .pq_esan_title{
-  font-size: 45px;
+  font-size: 25px;
   line-height: 32px;
-  font-family: 'Quincy-bold';
+  font-family: 'raleway-bold';
 }
 .pq_esan_p{
    font-size: 21px;
@@ -3830,7 +3875,7 @@ blockquote:before {
   .schedules-text-2{
     text-align: center;
   }
-  .pq_esan_icon_1 , .pq_esan_icon_2 ,.pq_esan_icon_3, .pq_esan_icon_4 {
+  .expositor_1 , .expositor_2 ,.expositor_3, .expositor_4 {
     width:150px 
   }
   #porque_mba{

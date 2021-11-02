@@ -28,19 +28,34 @@
 /* ============================== */
 
 @font-face {
-   font-family: 'Quincy-black';
-   src:  url("../fonts/Quincy/QuincyCF-Black.otf");  
-   src: url("../fonts/Quincy/QuincyCF-Black.otf") format('truetype');
+   font-family: 'pressura-bold';
+   src:  url("../fonts/Pressura/pressura-bold.ttf");  
+   src: url("../fonts/Pressura/pressura-bold.ttf") format('truetype');
  }
  @font-face {
-   font-family: 'Quincy-bold';
-   src:  url("../fonts/Quincy/QuincyCF-Bold.otf");  
-   src: url("../fonts/Quincy/QuincyCF-Bold.otf") format('truetype');
+   font-family: 'raleway-regular';
+   src:  url("../fonts/raleway/Raleway-Regular.ttf");  
+   src: url("../fonts/raleway/Raleway-Regular.ttf") format('truetype');
  } 
  @font-face {
-   font-family: 'Myriad';
-   src:  url("../fonts/myriad-pro/MYRIADPRO-REGULAR.OTF");  
-   src: url("../fonts/myriad-pro/MYRIADPRO-REGULAR.OTF") format('truetype');
+   font-family: 'raleway-medium';
+   src:  url("../fonts/raleway/Raleway-Medium.ttf");  
+   src: url("../fonts/raleway/Raleway-Medium.ttf") format('truetype');
+ } 
+ @font-face {
+   font-family: 'raleway-bold';
+   src:  url("../fonts/raleway/Raleway-Bold.ttf");  
+   src: url("../fonts/raleway/Raleway-Bold.ttf") format('truetype');
+ } 
+ @font-face {
+   font-family: 'roboto-bold';
+   src:  url("../fonts/roboto/Roboto-Bold.ttf");  
+   src: url("../fonts/roboto/Roboto-Bold.ttf") format('truetype');
+ } 
+ @font-face {
+   font-family: 'roboto-regular';
+   src:  url("../fonts/roboto/Roboto-Regular.ttf");  
+   src: url("../fonts/roboto/Roboto-Regular.ttf") format('truetype');
  } 
 
 
