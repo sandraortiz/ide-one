@@ -4442,4 +4442,16 @@ blockquote:before {
     padding: 30px;
   }
 }
+
+.color-body {
+  background-color: #000;
+  color: white;
+  height: 100;
+  font-family: 'raleway-regular';
+}
+
+.table {
+  color: white !important;
+  font-family: 'raleway-regular';
+}
 /*# sourceMappingURL=style.css.map */
