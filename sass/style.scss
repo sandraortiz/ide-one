@@ -3592,3 +3592,37 @@ blockquote:before {
   color:white !important ;
   font-family: 'raleway-regular';
 }
+
+select.form-select {
+  background-image: url('../images/header/select.png') !important ;
+  background-position:
+    calc(100% - 10px) calc(1em - 10px);
+  background-size:30px;
+  background-repeat: no-repeat;
+}
+
+select{
+  width: 268px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 5px;
+  height: 34px;
+  background-image: url('../images/header/select.png')  no-repeat right #ddd;
+  -webkit-appearance: none;
+  background-position-x: 244px;
+}
+
+.sections-4 {
+  background-image: url('../images/sections/icon-red.png') !important ;
+  background-repeat: no-repeat  !important ;
+  background-position: center !important ;
+}
+
+
+.sections-1{
+  background-image: url('../images/sections/icon-white.png') !important ;
+  background-repeat: no-repeat  !important ;
+  background-position: center !important ;
+}

@@ -30,3 +30,60 @@ function gologinPage() {
   window.location.href = "login.html";
 
 }
+
+
+const areonautica =  document.getElementById('aeronauticaButton');
+
+areonautica.onclick = areonauticaButton; // Agrega función onclick al elemento
+  
+function areonauticaButton() {
+  document.getElementById('ciudad_de_residencia').value='Aeronáutica'
+}
+
+
+
+const agricola =  document.getElementById('agricolaButton');
+
+agricola.onclick = agricolaButton; // Agrega función onclick al elemento
+  
+function agricolaButton() {
+  document.getElementById('ciudad_de_residencia').value='Agricola'
+}
+
+
+const alimentaria =  document.getElementById('alimentariaButton');
+
+alimentaria.onclick = alimentariaButton; // Agrega función onclick al elemento
+    
+function alimentariaButton() {
+  document.getElementById('ciudad_de_residencia').value='Alimentaria'
+}
+
+
+
+const pesca =  document.getElementById('pescaButton');
+
+pesca.onclick = pescaButton; // Agrega función onclick al elemento
+    
+function pescaButton() {
+  document.getElementById('ciudad_de_residencia').value='Pesca y Acuicultura'
+}
+
+
+const turismo =  document.getElementById('turismoButton');
+
+turismo.onclick = turismoButton; // Agrega función onclick al elemento
+    
+function turismoButton() {
+  document.getElementById('ciudad_de_residencia').value='Turismo Rural'
+}
+
+
+const veterinaria =  document.getElementById('veterinariaButton');
+
+veterinaria.onclick = veterinariaButton; // Agrega función onclick al elemento
+    
+function veterinariaButton() {
+  document.getElementById('ciudad_de_residencia').value='Veterinaria'
+}
+
