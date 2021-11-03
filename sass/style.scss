@@ -54,11 +54,16 @@
    .navbar {
       padding: 30px 0;
    }
+   .navbar-nav{
+      &.ml-5{
+         margin-left: 0px!important;
+      }
+   }
    .navbar-toggler{
       padding: 8px 0px;
       .navbar-toggler-icon{
          i{
-               color: #E4A137;
+               color: $white-color;
                font-weight: bolder;
                font-size: 49px;
          }
@@ -72,17 +77,17 @@
 
    ul.navbar-nav {
       >li {
-         border-right: 2px solid $primary-color;
+         border-right: 1px solid $white-color;
          max-width: 170px;
          width: 100%;
          display: flex;
          align-items: center;
          justify-content: center;
-         font-family: 'Quincy-bold';
+         font-family: 'raleway-bold';
 
          >a {
             font-weight: 400;
-            font-size: 14px;
+            font-size: 18px;
             line-height: 15px;
             padding: 0px;
             display: block;
@@ -177,7 +182,7 @@
                color: $white-color;
                line-height: 15px;
                text-align: center;
-               font-size: 13.4px;
+               font-size: 17px;
 
             }
 
@@ -304,13 +309,27 @@
       }
 
       &.header-classic {
-         background: #fff;
+         background: rgb(199, 116, 116);
          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
          padding: 0;
       }
    }
 }
 
+
+//semi botn 
+.col-semicirculo{
+   height: 62px;
+   margin-bottom: 60px!important;
+   .semicirculo {
+   height: 30px;
+   width: 60px;
+   border-radius: 50% / 0 0 100% 100%;
+   margin: auto;
+   text-align: center;
+   
+ }
+ }
 .dropdown-menu.show {
    display: none;
 }
@@ -424,6 +443,7 @@
           
             
             border-radius: 10px;
+            font-family: 'raleway-medium';
          }
          .form-check{
             font-size: 14px;
@@ -436,6 +456,17 @@
             width: 100%;
          }
          select:focus{ outline: none !important}
+         .btn{
+            border-radius: 50px;
+            height: 70px;
+            border: 2.7px solid $white-color;
+            font-family: 'pressura-bold';
+            font-size: 27px;
+            line-height: 28px;
+            &:hover{
+               color: $white-color
+            }
+         }
 
       }
       .box-select::after{
@@ -710,8 +741,8 @@
 /*==========================
      ts speaker
 ===========================*/
-.ts-speakers {
-   padding-top: 100px;
+.ts-themes {
+   padding-top: 0px;
    padding-bottom: 80px;
    position: relative;
    overflow: hidden;
@@ -720,6 +751,10 @@
    height: auto;
    display: flex;
    align-items: flex-end;
+   .semicirculo{
+      background: $primary-color;
+      color: $white-color;
+    }
    .col-one{
       display: flex;
       align-items: center;
@@ -728,7 +763,8 @@
       }
      .section-title{
         color: $gray-color;
-     }
+        line-height: 35px; 
+      }
    }
    .col-text{
       font-size: 30px;
@@ -1094,6 +1130,10 @@
       }
       .row-infor{
          padding: 20px 25px!important;
+         p{
+            font-family: 'raleway-regular';
+            text-align: justify;
+         }
          .bloq-info{
             padding: 20px 15px;
             h3{
@@ -1120,6 +1160,9 @@
             }
             &.aeronautica{
                background-color: $aero-light;
+            }
+            &.alimentaria{
+               background-color: $ali-light;
             }
             &.agricola{
                background-color: $agri-light;
@@ -1486,9 +1529,13 @@
    background-image: url('../images/sections/certificate/kv.jpg');
    background-repeat: no-repeat;
    background-size: cover;
-   padding: 100px 0px 100px;
+   padding: 0px 0px 100px;
    position: relative;
       overflow: hidden;
+      .semicirculo{
+         background: $gray-color;
+         color: $white-color;
+       }   
    .logo{
       content: url('../images/sections/certificate/logo.png');
       margin: auto;
@@ -1515,9 +1562,18 @@
    background-color: $primary-color ;
    background-repeat: no-repeat;
    background-size: cover;
-   padding: 100px 0px 100px;
+   padding: 0px 0px 100px;
    position: relative;
       overflow: hidden;
+      .section-title{
+         color: $white-color;
+         font-size: 30px;
+         line-height: 35px;
+      }
+      .semicirculo{
+         background: #040405;
+         color: $white-color;
+       }
       h1{
          font-size: 700px;
                line-height: 185px;
@@ -1566,6 +1622,10 @@
 =====================================*/
 .section-networking{
    background-image: url('../images/sections/networking/kv.jpg');
+   padding-bottom: 100px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden;
    .content{
       max-width: 590px;
       width: 100%;
@@ -1575,6 +1635,19 @@
    .section-title{
       color: $white-color;
       font-size: 30px;
+   }
+   .semicirculo{
+      background: $white-color;
+      color: $primary-color;
+    }
+    h1{
+      font-size: 700px;
+            line-height: 185px;
+            left: -80px;
+            top: -8px;
+            position: absolute;
+            color: rgba(255, 255, 255, 0.17);
+            font-family: 'pressura-bold';
    }
 }
 
@@ -3214,13 +3287,7 @@ blockquote:before {
   width: 80%;
   left:0px
 }
-.ts-speakers-text{
-  padding: 20px;
-}
-.ts-speakers .col-text h1{
-  left: 20px;
-  font-size:110px
-}
+
 // ranking
   .rk-box{
     display: block !important;
@@ -3237,18 +3304,12 @@ blockquote:before {
   }  
  
 // section-1
-  .hero-area.content-left{
-    background-image: url('../images/section-1/section-1-mobile.jpg') !important
-  }
+  
   .hero-area.content-left .banner-item .banner-content-wrap{
     margin-top: -100px;
   }
-  .banner-content-wrap-desktop {
-    display: none;
-  }
-  .banner-content-wrap-mobile{
-    display: block;
-  }
+ 
+ 
   .ts-schedule .col-two .box-content .box-mod{
     width: auto;
   }
@@ -3294,12 +3355,20 @@ blockquote:before {
             color: $white-color;
             text-align: center;
             font-size: 70px;
+            margin-bottom: 50px;
+         }
+         h4{
+            font-size: 30px;
+            color: $white-color;
+            text-align: center;
+            font-family: 'pressura-bold';
+            margin-bottom: 25px;
          }
          
          h1{
             font-size: 700px;
             line-height: 185px;
-            left: -84px;
+            left: -64px;
             top: -8px;
             position: absolute;
             color: rgba(255, 255, 255, 0.17);
@@ -3309,6 +3378,9 @@ blockquote:before {
             margin-bottom: 10px;
             p{
                font-family: 'raleway-regular';
+               color: $white-color;
+               max-width: 656px;
+               margin: auto;
             }
          }
       }
@@ -3323,8 +3395,9 @@ blockquote:before {
 .expositor_4, .expositor_5, .expositor_6,
 .expositor_7, .expositor_8, .expositor_9,
 .expositor_10, .expositor_11, .expositor_12{
-   width: 360px;
+   max-width: 360px;
    margin: auto;
+   width: 100%!important;
 }  
 .expositor_1 {
   content: url('../images/expositores/William-Arteaga.png');

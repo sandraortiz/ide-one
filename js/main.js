@@ -329,13 +329,22 @@ jQuery(function ($) {
       }, 1000, 'linear');
       return false;
     });
-  }
+  };
+  if ($(' .ts-scroll2').length > 0) {
+    $('.ts-scroll2').on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top - 85
+      }, 1000, 'linear');
+      return false;
+    });
+  };
   $(window).on('load resize orientationchange', function () {
     $('.item-slide').each(function () {
       var $carousel = $(this);
       /* Initializes a slick carousel only on mobile screens */
       // slick on mobile
-      if ($(window).width() > 576) {
+      if ($(window).width() > 956) {
         $carousel.slick({
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -345,17 +354,57 @@ jQuery(function ($) {
 
         });
       }
-      else if ($(window).width() < 576) {
+      else if ($(window).width() > 480) {
+        $carousel.slick({
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          mobileFirst: true,
+          dots: true,
+          autoplay: false,
+          arrows: false
+
+        });
+
+      }
+      else  {
         $carousel.slick({
           slidesToShow: 1,
           slidesToScroll: 1,
           mobileFirst: true,
           dots: true,
           autoplay: false,
+          arrows: false
 
         });
 
       }
+    });
+
+  });
+
+  $(window).on('load resize orientationchange', function () {
+    $('.item-slide-aeronautica, .item-slide-agricola').each(function () {
+      var $carousel = $(this);
+      /* Initializes a slick carousel only on mobile screens */
+      // slick on mobile
+      if ($(window).width() > 906) {
+        if ($carousel.hasClass('slick-initialized')) {
+            $carousel.slick('unslick');
+        }
+    }
+    else{
+        if (!$carousel.hasClass('slick-initialized')) {
+            $carousel.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                mobileFirst: true,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 20000,
+                arrows: false
+            });
+        }
+    }
     });
 
   });
