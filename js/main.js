@@ -339,7 +339,31 @@ jQuery(function ($) {
       return false;
     });
   };
+
   $(window).on('load resize orientationchange', function () {
+    $('.item-slide-aeronautica , .item-slide-agricola').each(function () {
+      var $carousel = $(this);
+      /* Initializes a slick carousel only on mobile screens */
+      // slick on mobile
+      if ($(window).width() > 906) {
+        if ($carousel.hasClass('slick-initialized')) {
+            $carousel.slick('unslick');
+        }
+    }
+    else{
+        if (!$carousel.hasClass('slick-initialized')) {
+            $carousel.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                mobileFirst: true,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 20000,
+                arrows: false
+            });
+        }
+    }
+    });
     $('.item-slide').each(function () {
       var $carousel = $(this);
       /* Initializes a slick carousel only on mobile screens */
@@ -378,33 +402,6 @@ jQuery(function ($) {
         });
 
       }
-    });
-
-  });
-
-  $(window).on('load resize orientationchange', function () {
-    $('.item-slide-aeronautica, .item-slide-agricola').each(function () {
-      var $carousel = $(this);
-      /* Initializes a slick carousel only on mobile screens */
-      // slick on mobile
-      if ($(window).width() > 906) {
-        if ($carousel.hasClass('slick-initialized')) {
-            $carousel.slick('unslick');
-        }
-    }
-    else{
-        if (!$carousel.hasClass('slick-initialized')) {
-            $carousel.slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                mobileFirst: true,
-                dots: true,
-                autoplay: true,
-                autoplaySpeed: 20000,
-                arrows: false
-            });
-        }
-    }
     });
 
   });
