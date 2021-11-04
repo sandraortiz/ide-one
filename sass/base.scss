@@ -136,11 +136,7 @@ a:visited {
     text-decoration: none;
 }
 a {
-    color: $primary-color;
     @include transition();
-    &:hover{
-      color: $primary-color;
-   }
 }
 
 a.read-more {

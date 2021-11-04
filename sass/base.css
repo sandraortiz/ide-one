@@ -134,15 +134,10 @@ a:visited {
 }
 
 a {
-  color: #DC0933;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
-}
-
-a:hover {
-  color: #DC0933;
 }
 
 a.read-more {

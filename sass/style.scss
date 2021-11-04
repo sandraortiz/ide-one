@@ -42,11 +42,16 @@
       header area
 ===========================*/
 .modal{
+   font-family: 'raleway-medium';
    p{
       color: #222222;
+      font-family: 'raleway-regular';
+      font-size: 17px;
    }
    .btn{
       line-height: 15px;
+      font-family: 'raleway-bold';
+      font-size: 13px;
    }
 }
 .header {
@@ -444,6 +449,27 @@
          max-width: 490px;
          width: 100%;
          margin: auto;
+         h1{
+            color: $white-color;
+            font-size: 28px;
+            font-family: 'raleway-bold';
+            line-height: 23px;
+            span{
+               font-size: 18px;
+            }
+         }
+         .form-check-label{
+            font-family: 'raleway-regular';
+               font-size: 17px;
+               line-height: 18px;
+               margin-bottom: 20px;
+            a{
+               text-decoration: none;
+               color: $white-color;
+               
+            }
+         }
+         
          ::placeholder { color: $white-color; }
          input, select{
             background-color: #71747C;
@@ -472,6 +498,7 @@
             font-family: 'pressura-bold';
             font-size: 27px;
             line-height: 28px;
+            text-transform: none!important;
             &:hover{
                color: $white-color
             }
@@ -1163,6 +1190,7 @@
                margin-bottom: 0px;
                font-family: 'raleway-regular';
                font-size: 20px;
+               text-align: left;
                &.pd-align{
                   margin-top: 19px;
                }
@@ -1571,6 +1599,7 @@
 =====================================*/
 .section-especializate{
    background-color: $primary-color ;
+   background-image: url('../images/sections/especializate/kv.jpg');
    background-repeat: no-repeat;
    background-size: cover;
    padding: 0px 0px 100px;
@@ -1638,7 +1667,7 @@
    background-size: cover;
    overflow: hidden;
    .content{
-      max-width: 590px;
+      max-width: 600px;
       width: 100%;
       margin: auto;
     
@@ -3416,7 +3445,9 @@ blockquote:before {
    .expositor_1, .expositor_2, .expositor_3, 
 .expositor_4, .expositor_5, .expositor_6,
 .expositor_7, .expositor_8, .expositor_9,
-.expositor_10, .expositor_11, .expositor_12{
+.expositor_10, .expositor_11, .expositor_12, 
+.expositor_13, .expositor_14, .expositor_15,
+ .expositor_16, .expositor_17, .expositor_18{
    max-width: 360px;
    margin: auto;
    width: 100%!important;
@@ -3460,6 +3491,24 @@ blockquote:before {
  .expositor_12{
    content: url('../images/expositores/Enrique-Avendaño-.png');
  }
+ .expositor_13{
+   content: url('../images/expositores/Elliot-Arteaga.png');
+ }
+ .expositor_14{
+   content: url('../images/expositores/Fernando-Casafranca.png');
+ }
+ .expositor_15{
+   content: url('../images/expositores/Alejandro-Pezua.png');
+ }
+ .expositor_16{
+   content: url('../images/expositores/Luis-Prieto-Rojas.png');
+ }
+ .expositor_17{
+   content: url('../images/expositores/Yancarlo-Mercado-Garcia.png');
+}
+ .expositor_18{
+   content: url('../images/expositores/Elmer-Cabana.png');
+ }
  p{
     text-align: center;
  }
@@ -3486,14 +3535,14 @@ blockquote:before {
 }
 
 .slick-dots li{
-  background: black !important;
   border-radius: 20px;
   width:15px !important;
   height:15px !important;
+  border: 2px solid $white-color
 }
 
 .slick-dots .slick-active {
-  background: #58595B  !important;
+  background: $white-color  !important;
   border-radius: 20px;
   width:20px !important;
   height:20px !important;
@@ -3553,6 +3602,76 @@ blockquote:before {
   flex-direction: row;
   justify-content: space-around;
 }
+.color-body{
+   background-color: #000;
+   color:white;
+   height: 100;
+   font-family: 'raleway-regular';
+ }
+ .table{
+   color:white !important ;
+   font-family: 'raleway-regular';
+   font-size: 25px;
+ }
+ .btn-excel{
+   color:white !important ;
+   font-family: 'raleway-regular';
+   font-size: 20px;
+   text-transform:unset;
+ }
+ .pagination{
+   font-family: 'raleway-regular';
+ 
+ }
+ .table-responsive{
+   overflow-x:auto;
+ }
+ .page-link {
+     color: #000 !important;
+ }
+ .pagination a:hover {
+   color: red
+ }
+ .page-item.active .page-link {
+   z-index: 1;
+   color: #fff;
+   background-color: red;
+   border-color: red;
+ }
+ select.form-select {
+   background-image: url('../images/header/select.png') !important ;
+   background-position:
+     calc(100% - 10px) calc(1em - 10px);
+   background-size:30px;
+   background-repeat: no-repeat;
+ }
+ 
+ select{
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 5px;
+   height: 34px;
+   background-image: url('../images/header/select.png')  no-repeat right #ddd;
+   -webkit-appearance: none;
+   background-position-x: 244px;
+ }
+ 
+ .sections-4 {
+   background-image: url('../images/sections/icon-red.png') !important ;
+   background-repeat: no-repeat  !important ;
+   background-position: center 56% !important ;
+ }
+ 
+ 
+ .sections-1{
+   background-image: url('../images/banner/arrow.png') !important ;
+   background-repeat: no-repeat  !important ;
+   background-position: center 56% !important;
+ }
+ 
 @media (max-width: 767px) {
   .schedules-1{
     display: block;
@@ -3604,72 +3723,3 @@ blockquote:before {
   }
 }
 
-.color-body{
-  background-color: #000;
-  color:white;
-  height: 100;
-  font-family: 'raleway-regular';
-}
-.table{
-  color:white !important ;
-  font-family: 'raleway-regular';
-  font-size: 25px;
-}
-.btn-excel{
-  color:white !important ;
-  font-family: 'raleway-regular';
-  font-size: 20px;
-  text-transform:unset;
-}
-.pagination{
-  font-family: 'raleway-regular';
-
-}
-.table-responsive{
-  overflow-x:auto;
-}
-.page-link {
-    color: #000 !important;
-}
-.pagination a:hover {
-  color: red
-}
-.page-item.active .page-link {
-  z-index: 1;
-  color: #fff;
-  background-color: red;
-  border-color: red;
-}
-select.form-select {
-  background-image: url('../images/header/select.png') !important ;
-  background-position:
-    calc(100% - 10px) calc(1em - 10px);
-  background-size:30px;
-  background-repeat: no-repeat;
-}
-
-select{
-  width: 268px;
-  padding: 5px;
-  font-size: 16px;
-  line-height: 1;
-  border: 0;
-  border-radius: 5px;
-  height: 34px;
-  background-image: url('../images/header/select.png')  no-repeat right #ddd;
-  -webkit-appearance: none;
-  background-position-x: 244px;
-}
-
-.sections-4 {
-  background-image: url('../images/sections/icon-red.png') !important ;
-  background-repeat: no-repeat  !important ;
-  background-position: center 56% !important ;
-}
-
-
-.sections-1{
-  background-image: url('../images/banner/arrow.png') !important ;
-  background-repeat: no-repeat  !important ;
-  background-position: center 56% !important ;
-}

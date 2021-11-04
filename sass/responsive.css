@@ -256,9 +256,6 @@ tab device
   .ts-schedule .bloq-area .row-infor .bloq-info p.pd-align {
     margin-top: 4px;
   }
-  .ts-schedule .bloq-area .row-infor .bloq-info p.pd-align br {
-    display: none;
-  }
   .ts-schedule .bloq-area .row-infor .bloq-info .col-table {
     display: block;
   }
