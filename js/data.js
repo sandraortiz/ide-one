@@ -6,10 +6,33 @@ new Vue({
     return {
       name: '',
       usuarios: [],
-  
+      countOfPage: 10,
+      currPage: 1,
+      filter_name: ''
+    }
+  },
+  computed: {
+    // filteredRows: function () {
+    //   var filter_name = this.filter_name.toLowerCase();
+    //   return (this.filter_name.trim() !== '') ?
+    //     this.rows.filter(function (d) { return d.name.toLowerCase().indexOf(filter_name) > -1; }) :
+    //     this.rows;
+    // },
+
+    pageStart: function () {
+      return (this.currPage - 1) * this.countOfPage;
+    },
+    totalPage: function () {
+      return Math.ceil(this.usuarios.length / this.countOfPage);
     }
   },
   methods: {
+    setPage(idx) {
+      if (idx <= 0 || idx > this.totalPage) {
+        return;
+      }
+      this.currPage = idx;
+    },
     ExportExcel(type, fn, dl) {
       var elt = this.$refs.exportable_table;
       var wb = XLSX.utils.table_to_book(elt, { sheet: "Sheet JS" });
@@ -24,7 +47,7 @@ new Vue({
 
       });
     },
-    async obtenerDatos() {
+    obtenerDatos() {
       const onGetDatos = (callback) => db.collection("informacion").onSnapshot(callback);
       onGetDatos((querySnapshot) => {
         querySnapshot.forEach((doc) => {
@@ -35,7 +58,7 @@ new Vue({
       });
 
     },
-   
+
   },
   mounted() {
     this.obtenerDatos();
