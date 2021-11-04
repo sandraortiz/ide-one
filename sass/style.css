@@ -553,10 +553,6 @@ img.pull-right {
   padding: 30px 0;
 }
 
-.header .navbar-nav.ml-5 {
-  margin-left: 0px !important;
-}
-
 .header .navbar-toggler {
   padding: 8px 0px;
 }
@@ -584,7 +580,7 @@ img.pull-right {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: 'raleway-bold';
+  font-family: 'raleway-regular';
 }
 
 .header ul.navbar-nav > li > a {
@@ -601,14 +597,18 @@ img.pull-right {
 
 .header ul.navbar-nav > li.header-ticket {
   margin-top: 15px;
+  border-right: none !important;
+  max-width: 200px;
 }
 
-.header ul.navbar-nav > li.header-ticket .ticket-btn {
-  height: 40px;
-  line-height: 40px;
-  padding: 0px 25px;
-  background: #00c1c1;
-  margin-left: 30px;
+.header ul.navbar-nav > li.header-ticket .btn {
+  border: 2px solid #fff;
+  padding: 10px  12px;
+  border-radius: 40px;
+  font-size: 16px;
+  text-transform: none !important;
+  width: 214px;
+  line-height: 26px;
 }
 
 .header ul.navbar-nav > li.active .ts-scroll {
@@ -641,6 +641,10 @@ img.pull-right {
 
 .header ul.navbar-nav li .dropdown-menu li:last-child a {
   border-bottom: none;
+}
+
+.header ul.navbar-nav li.two {
+  border-right: none !important;
 }
 
 .header.header-transparent {
@@ -798,7 +802,7 @@ img.pull-right {
 }
 
 .col-semicirculo .semicirculo {
-  height: 30px;
+  height: 34px;
   width: 60px;
   border-radius: 50% / 0 0 100% 100%;
   margin: auto;
@@ -870,7 +874,7 @@ img.pull-right {
 }
 
 .hero-area.content-left .banner-item .banner-content-wrap {
-  padding: 115px 0;
+  padding: 115px 0 20px;
 }
 
 .hero-area.content-left .banner-item .banner-content-wrap .title-shap-img {
@@ -892,10 +896,16 @@ img.pull-right {
 }
 
 .hero-area.content-left .banner-item .banner-content-wrap .banner-info {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 25px;
   font-family: 'raleway-regular';
   line-height: 26px;
+}
+
+.hero-area.content-left .banner-item .banner-content-wrap img {
+  right: 13px;
+  position: absolute;
+  bottom: 6px;
 }
 
 .hero-area.content-left .banner-item .form-1 {
@@ -2110,6 +2120,8 @@ img.pull-right {
 .section-certificate .logo {
   content: url("../images/sections/certificate/logo.png");
   margin: auto;
+  max-width: 360px;
+  width: 100%;
 }
 
 .section-certificate .section-title {
@@ -3823,6 +3835,10 @@ blockquote:before {
   background-color: #8B8F9D;
 }
 
+.carrusel-contentsection {
+  background-image: url("../images/sections/ventajas/kv.jpg");
+}
+
 .carrusel-content .ts-speakers {
   padding-top: 100px;
   padding-bottom: 80px;
@@ -3836,7 +3852,6 @@ blockquote:before {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background-color: #8B8F9D;
   overflow-y: hidden;
 }
 
@@ -4123,12 +4138,12 @@ select {
 .sections-4 {
   background-image: url("../images/sections/icon-red.png") !important;
   background-repeat: no-repeat  !important;
-  background-position: center !important;
+  background-position: center 56% !important;
 }
 
 .sections-1 {
-  background-image: url("../images/sections/icon-white.png") !important;
+  background-image: url("../images/banner/arrow.png") !important;
   background-repeat: no-repeat  !important;
-  background-position: center !important;
+  background-position: center 56% !important;
 }
 /*# sourceMappingURL=style.css.map */

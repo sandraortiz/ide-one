@@ -5,10 +5,7 @@ tab rotate
  
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-   section, .section-padding{
-      padding:65px 0px
-   }
- 
+  
  
    // header nav
    .header {
@@ -22,6 +19,7 @@ tab rotate
    .banner-item .banner-content-wrap .banner-title {
       font-size: 60px;
    }
+        
 
    .hero-area.centerd-item {
       .banner-item {
@@ -113,7 +111,14 @@ tab device
 
 @media(min-width: 768px) and (max-width: 991px) {
   
-   
+   .banner-item {
+      .banner-content-wrap {
+         img {
+            display: none;
+         }
+      }
+   }
+ 
    .ts-themes{
       .col-one{
          .part-col{
@@ -507,13 +512,17 @@ tab device
 small device /mobile sm and large
 ===========================*/
 @media (max-width: 767px) {
+   .banner-item {
+      .banner-content-wrap {
+         img {
+            display: none;
+         }
+      }
+   }
    .ts-themes .col-text .text-direct{
       margin-bottom: 120px;
    }
-   .ts-themes .col-text h1{
-      bottom: -34px;
-      line-height: 80px;
-   }
+   
 
    .dropdown-menu.show {
       display: block;
@@ -838,8 +847,7 @@ small device /mobile sm and large
    // index 4 hero area
    .hero-area.content-left {
       background-repeat: no-repeat;
-      background-position: top center!important;
-      background-image: url('../images/banner/kv-m.jpg') !important;
+      background-position: bottom 50%!important;
       .banner-item {
          min-height: inherit;
          margin: 106px 0px 0px;
@@ -1186,10 +1194,35 @@ small device /mobile sm and large
       position: static;
       margin: 0px;
    }
+   //formulario
+   .form-1{
+      padding: 35px 32px !important;
+   }
 
 
 }
 @media (max-width: 480px) {
+   .section-certificate{
+      h1{
+         font-size: 400px;
+      top: -88px;
+      right: -33px;
+      }
+   }
+   .ts-themes{
+      .col-text{
+         h1{
+            bottom: -34px;
+            line-height: 80px;
+            font-size: 400px;
+            right: -35px;
+         }
+         p{
+            font-size: 16px;
+         }
+      }
+      
+   } 
    .ts-schedule {
       height: auto;
       padding: 10px 0px!important;
@@ -1346,7 +1379,11 @@ small device /mobile sm and large
          font-size: 396px;
             }
             .section-title{
-               font-size: 40px;
+               font-size: 35px;
+               line-height: 40px;
+            }
+            p{
+               font-size: 16.8px;
             }
          }
       }
@@ -1357,6 +1394,9 @@ small device /mobile sm and large
          top: -90px;
          font-size: 396px;
       }
+      p{
+         font-size: 16px;
+      }
    }
    .section-networking{
       h1{
@@ -1364,6 +1404,10 @@ small device /mobile sm and large
          top: -90px;
          font-size: 396px;
       }
+   }
+    //formulario
+    .form-1{
+      padding: 35px 12px !important;
    }
 
 }

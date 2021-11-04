@@ -55,9 +55,6 @@
       padding: 30px 0;
    }
    .navbar-nav{
-      &.ml-5{
-         margin-left: 0px!important;
-      }
    }
    .navbar-toggler{
       padding: 8px 0px;
@@ -83,7 +80,7 @@
          display: flex;
          align-items: center;
          justify-content: center;
-         font-family: 'raleway-bold';
+         font-family: 'raleway-regular';
 
          >a {
             font-weight: 400;
@@ -99,14 +96,17 @@
 
          &.header-ticket {
             margin-top: 15px;
+            border-right: none!important;
+            max-width: 200px;
 
-            .ticket-btn {
-               height: 40px;
-               line-height: 40px;
-               padding: 0px 25px;
-               background: #00c1c1;
-               margin-left: 30px;
-
+            .btn{
+               border: 2px solid $white-color;
+               padding: 10px  12px;
+               border-radius: 40px;
+               font-size: 16px;
+               text-transform: none!important;
+               width: 214px;
+               line-height: 26px;
 
             }
          }
@@ -119,6 +119,7 @@
          }
 
       }
+     
 
       li {
          .dropdown-menu {
@@ -148,6 +149,9 @@
                   }
                }
             }
+         }
+         &.two{
+            border-right: none!important;
          }
 
       }
@@ -322,7 +326,7 @@
    height: 62px;
    margin-bottom: 60px!important;
    .semicirculo {
-   height: 30px;
+   height: 34px;
    width: 60px;
    border-radius: 50% / 0 0 100% 100%;
    margin: auto;
@@ -405,7 +409,7 @@
       display: flex;
       align-items: center;
       .banner-content-wrap{
-         padding: 115px 0;
+         padding: 115px 0 20px;
          
          .title-shap-img{
             margin-bottom: 20px;
@@ -423,10 +427,15 @@
             }
          }
          .banner-info{
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             font-size: 25px;
             font-family: 'raleway-regular';
             line-height: 26px;
+         }
+         img{
+            right: 13px;
+            position: absolute;
+            bottom: 6px;
          }
       }
       .form-1{
@@ -1539,6 +1548,8 @@
    .logo{
       content: url('../images/sections/certificate/logo.png');
       margin: auto;
+      max-width: 360px;
+      width: 100%;
    }
    .section-title{
       color: $white-color;
@@ -3337,6 +3348,10 @@ blockquote:before {
 /*------------porque esan-------------*/
 
 .carrusel-content{
+   &section{
+      
+   background-image: url('../images/sections/ventajas/kv.jpg');
+   }
    background-color: $gray-color ;
    .ts-speakers {
       padding-top: 100px;
@@ -3347,7 +3362,6 @@ blockquote:before {
       height: auto;
       display: flex;
       align-items: flex-end;
-      background-color: $gray-color;
       overflow-y: hidden;
       .col-text{
          font-size: 30px;
@@ -3617,12 +3631,12 @@ select{
 .sections-4 {
   background-image: url('../images/sections/icon-red.png') !important ;
   background-repeat: no-repeat  !important ;
-  background-position: center !important ;
+  background-position: center 56% !important ;
 }
 
 
 .sections-1{
-  background-image: url('../images/sections/icon-white.png') !important ;
+  background-image: url('../images/banner/arrow.png') !important ;
   background-repeat: no-repeat  !important ;
-  background-position: center !important ;
+  background-position: center 56% !important ;
 }
