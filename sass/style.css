@@ -4119,6 +4119,37 @@ blockquote:before {
 .table {
   color: white !important;
   font-family: 'raleway-regular';
+  font-size: 25px;
+}
+
+.btn-excel {
+  color: white !important;
+  font-family: 'raleway-regular';
+  font-size: 20px;
+  text-transform: unset;
+}
+
+.pagination {
+  font-family: 'raleway-regular';
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.page-link {
+  color: #000 !important;
+}
+
+.pagination a:hover {
+  color: red;
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: red;
+  border-color: red;
 }
 
 select.form-select {

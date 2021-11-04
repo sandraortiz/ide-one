@@ -53,13 +53,13 @@
             <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
           </button>
           <!-- logo-->
-          <a class="navbar-brand" >
+          <a class="navbar-brand">
             <img src="images/header/logo/logo.png" alt="">
           </a>
 
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
-  
+
               <li class="nav-item nav-link">
                 <a class="ts-scroll" @click="cerrarSesion()" id="cerrarSesion">Cerrar sesion</a>
                 <!-- <button type="button" @click="cerrarSesion()" id="cerrarSesion">Cerrar sesion</button>  -->
@@ -77,9 +77,9 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <div >
-                
-                <table ref="exportable_table" id="tableExcel" class="table">
+              <div class="table-responsive">
+
+                <table ref="exportable_table" id="tableExcel" class="table table-users">
                   <thead>
                     <tr>
                       <th scope="col">Area</th>
@@ -92,25 +92,50 @@
                     </tr>
                   </thead>
                   <tbody id="table-container">
-                    <tr v-for="(item, index) in usuarios" :key="index">
+                    <tr v-for="(item, index) in usuarios.slice(pageStart, pageStart + countOfPage)" :key="index">
                       <td>{{ item.area }}</td>
                       <td>{{ item.nombre }}</td>
                       <td>{{ item.apellido }}</td>
-                      <td>{{ item.email }}</td>
                       <td>{{ item.telefono }}</td>
+                      <td>{{ item.email }}</td>
                       <td>{{ item.fecha }}</td>
                       <td>{{ item.hora }}</td>
-
                     </tr>
                   </tbody>
                 </table>
-     
-                <button type="button" class="btn btn-secondary" @click="ExportExcel('xls')">Export table to excel xls</button>
-                <button type="button" class="btn btn-secondary" @click="ExportExcel('xlsx')">Export table to excel xlsx</button>
               </div>
             </div>
 
-          </div><!-- row end-->
+          </div>
+          <div class="row">
+            <!-- <div class="col-sm">
+              <button type="button" class="btn btn-secondary btn-excel" @click="ExportExcel('xlsx')">
+                Exportar excel ".xlsx"</button>
+            </div> -->
+            <div class="col-sm">
+              <button type="button" class="btn btn-secondary btn-excel" @click="ExportExcel('xls')">
+                Exportar excel ".xls"</button>
+            </div>
+            <div class="col-sm">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+
+                  <li class="page-item" v-bind:class="{'disabled': (currPage === 1)}"
+                    @click.prevent="setPage(currPage-1)"><a class="page-link" href="">Prev</a></li>
+
+
+                  <li class="page-item" v-for="n in totalPage" v-bind:class="{'active': (currPage === (n))}"
+                    @click.prevent="setPage(n)"><a class="page-link" href="">{{n}}</a></li>
+
+
+                  <li class="page-item" v-bind:class="{'disabled': (currPage === totalPage)}"
+                    @click.prevent="setPage(currPage+1)"><a class="page-link" href="">Next</a></li>
+
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- row end-->
         </div>
         <!-- Container end -->
       </div>
