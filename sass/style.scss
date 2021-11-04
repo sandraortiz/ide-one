@@ -3249,15 +3249,23 @@ blockquote:before {
 
 .correo {
   font-size: 19px;
+  font-family: 'roboto-bold';
 }
 
 .web, .text-uni, .direccion, .distrito {
-  font-size: 12px;
+   font-size: 12px;
+  font-family: 'roboto-regular';
+}
+.direccion, .distrito{
+   
 }
 
 .web, .text-uni, .correo, .direccion, .distrito {
   margin-block-end: 0px;
   color: white !important ;
+}
+.web{
+   font-family: 'roboto-bold';
 }
 
 .footer-area {

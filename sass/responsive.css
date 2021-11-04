@@ -2,6 +2,16 @@
 tab rotate 
 ===========================*/
 @media (min-width: 992px) and (max-width: 1200px) {
+  .ts-schedule .bloq-info p {
+    font-size: 15px !important;
+  }
+  .ts-schedule .bloq-info p.pd-align {
+    margin-top: 24px !important;
+  }
+  .ts-schedule .bloq-info strong {
+    font-size: 20px !important;
+    line-height: 20px !important;
+  }
   .header ul.navbar-nav > li > a {
     padding: 0 10px;
     font-size: 13px;
@@ -127,7 +137,6 @@ tab device
     color: #fff;
   }
   .header-transparent .navbar-nav {
-    background: #000000;
     padding: 20px 0;
   }
   .header-transparent .navbar-nav li .dropdown-menu li a {
@@ -1011,6 +1020,9 @@ small device /mobile sm and large
 }
 
 @media (max-width: 325px) {
+  .form-1 select, .form-1 input {
+    font-size: 14px !important;
+  }
   .navbar .navbar-brand img {
     max-width: 182px;
   }

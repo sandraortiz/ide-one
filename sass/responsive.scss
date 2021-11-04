@@ -5,7 +5,21 @@ tab rotate
  
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-  
+  .ts-schedule {
+     .bloq-info{
+        p{
+           font-size: 15px!important;
+           &.pd-align{
+              margin-top: 24px!important;
+           }
+        }
+        strong{
+           font-size: 20px!important;
+           line-height: 20px!important;
+        }
+
+     }
+  }
  
    // header nav
    .header {
@@ -200,7 +214,6 @@ tab device
       }
 
       .navbar-nav {
-         background: #000000;
          padding: 20px 0;
 
          li {
@@ -1412,6 +1425,11 @@ small device /mobile sm and large
 
 }
 @media (max-width: 325px) {
+   .form-1{
+      select, input{
+         font-size: 14px!important;
+      }
+   }
    .navbar{
       .navbar-brand{
          img {
