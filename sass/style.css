@@ -394,7 +394,7 @@ img.pull-right {
   color: #DC0933;
   position: relative;
   padding-bottom: 30px;
-  line-height: 45px;
+  line-height: 52px;
 }
 
 .section-title:after,
@@ -1589,6 +1589,21 @@ img.pull-right {
   background-color: #fff;
   height: auto;
   padding: 100px 0px;
+}
+
+.ts-schedule .section-title {
+  color: #8B8F9D;
+  font-size: 70px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+
+.ts-schedule h4 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 70px;
 }
 
 .ts-schedule .bloq-area {

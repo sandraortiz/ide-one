@@ -193,7 +193,7 @@ tab device
   }
   .ts-schedule {
     height: auto;
-    padding: 10px 0px !important;
+    padding: 95px 0px !important;
   }
   .ts-schedule .bloq-area {
     padding: 30px 0px 10px;
@@ -386,7 +386,10 @@ small device /mobile sm and large
   }
   .ts-schedule {
     height: auto;
-    padding: 10px 0px !important;
+    padding: 95px 0px !important;
+  }
+  .ts-schedule .section-title {
+    font-size: 48px;
   }
   .ts-schedule .bloq-area {
     padding: 30px 0px 10px;
@@ -839,10 +842,23 @@ small device /mobile sm and large
 }
 
 @media (max-width: 480px) {
+  .banner-item {
+    background-color: rgba(139, 143, 157, 0.4);
+  }
+  .banner-item .banner-content-wrap .banner-info {
+    font-size: 12px;
+    font-weight: bolder;
+  }
+  .section-networking {
+    padding-bottom: 50px;
+  }
   .section-certificate h1 {
     font-size: 400px;
     top: -88px;
     right: -33px;
+  }
+  .ts-themes {
+    padding-bottom: 0px;
   }
   .ts-themes .col-text h1 {
     bottom: -34px;
@@ -855,7 +871,10 @@ small device /mobile sm and large
   }
   .ts-schedule {
     height: auto;
-    padding: 10px 0px !important;
+    padding: 60px 0px !important;
+  }
+  .ts-schedule .section-title {
+    font-size: 36px;
   }
   .ts-schedule .bloq-area {
     padding: 30px 0px 10px;
@@ -941,7 +960,7 @@ small device /mobile sm and large
             justify-content: flex-start;
   }
   .navbar .navbar-brand img {
-    max-width: 220px;
+    max-width: 240px;
     width: 100%;
   }
   .hero-area.content-left .banner-item .banner-content-wrap {
