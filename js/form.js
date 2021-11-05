@@ -22,14 +22,14 @@ formTask.addEventListener('submit'  , async(e) => {
   // console.log(response)
 } )
 
-const loginPage =  document.getElementById('login-page');
+// const loginPage =  document.getElementById('login-page');
 
-loginPage.onclick = gologinPage; // Agrega función onclick al elemento
+// loginPage.onclick = gologinPage; // Agrega función onclick al elemento
   
-function gologinPage() {
-  window.location.href = "login.html";
+// function gologinPage() {
+//   window.location.href = "login.html";
 
-}
+// }
 
 
 const areonautica =  document.getElementById('aeronauticaButton');
