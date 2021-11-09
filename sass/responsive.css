@@ -9,9 +9,37 @@ tab rotate
     font-size: 42px !important;
     line-height: 42px !important;
   }
+  .hero-area.content-left .banner-item {
+    padding: 78px 0px 0px;
+  }
+  .hero-area.content-left .banner-item .banner-content-wrap .banner-info {
+    margin-bottom: 60px;
+  }
+  .hero-area.content-left .banner-item .col-resp {
+    padding: 0px !important;
+  }
+  .hero-area.content-left .banner-item .col-resp .form-1 {
+    padding: 50px 65px 35px;
+  }
+  .hero-area.content-left .banner-item .col-resp .form-1 .form-group {
+    margin: 10px 0px;
+  }
+  .hero-area.content-left .banner-item .col-resp .form-1 .btn {
+    font-size: 23px !important;
+    height: 62px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+  .hero-area.content-left .banner-item .col-resp {
+    padding: 0px !important;
+  }
+  .hero-area.content-left .banner-item .col-resp .form-1 {
+    padding: 60px 65px 30px;
+  }
+  .hero-area.content-left .banner-item .col-resp .form-1 .form-group {
+    margin: 10px 0px;
+  }
   .ts-schedule .bloq-info p {
     font-size: 15px !important;
   }
@@ -37,7 +65,13 @@ tab rotate
     font-size: 13px;
   }
   .banner-item .banner-content-wrap .banner-title {
-    font-size: 60px;
+    font-size: 55px !important;
+  }
+  .banner-item .banner-content-wrap .banner-title span {
+    font-size: 67px !important;
+  }
+  .hero-area.content-left .banner-item .banner-content-wrap .banner-info {
+    margin-bottom: 60px;
   }
   .hero-area.centerd-item .banner-item {
     min-height: 650px;
@@ -227,7 +261,7 @@ tab device
   }
   .ts-schedule .bloq-area .tab .tab-1 {
     width: 220px;
-    padding-left: 10px;
+    padding-left: 14px;
     font-size: 34px;
   }
   .ts-schedule .bloq-area .tab .tab-2 {
@@ -423,7 +457,7 @@ small device /mobile sm and large
   }
   .ts-schedule .bloq-area .tab .tab-1 {
     width: 220px;
-    padding-left: 10px;
+    padding-left: 16px;
     font-size: 27px;
   }
   .ts-schedule .bloq-area .tab .tab-2 {
@@ -938,7 +972,7 @@ small device /mobile sm and large
   }
   .ts-schedule .bloq-area .tab .tab-1 {
     width: 220px;
-    padding-left: 10px;
+    padding-left: 18px;
     font-size: 27px;
   }
   .ts-schedule .bloq-area .tab .tab-2 {

@@ -10,8 +10,44 @@ tab rotate
       }
       
    } 
+   .hero-area.content-left {
+      .banner-item {
+         padding: 78px 0px 0px;
+        .banner-content-wrap .banner-info{
+            margin-bottom: 60px;
+         }
+              
+         .col-resp{
+            padding: 0px!important;
+            .form-1{
+               padding: 50px 65px 35px;
+               .form-group{
+                  margin: 10px 0px;
+               }
+               .btn{
+                  font-size: 23px!important;
+                  height: 62px;
+               }
+            }
+         }
+      }
+   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
+   .hero-area.content-left {
+      .banner-item {
+        
+         .col-resp{
+            padding: 0px!important;
+            .form-1{
+               padding: 60px 65px 30px;
+               .form-group{
+                  margin: 10px 0px;
+               }
+            }
+         }
+      }
+   }
   .ts-schedule {
      .bloq-info{
         p{
@@ -53,7 +89,13 @@ tab rotate
 
    //banner
    .banner-item .banner-content-wrap .banner-title {
-      font-size: 60px;
+      font-size: 55px!important;
+      span{
+         font-size: 67px!important;
+      }
+   }
+   .hero-area.content-left .banner-item .banner-content-wrap .banner-info{
+      margin-bottom: 60px;
    }
         
 
@@ -339,7 +381,7 @@ tab device
             height: 70px;
             .tab-1{
                width: 220px;
-               padding-left:10px;
+               padding-left:14px;
                font-size: 34px;
             }
             .tab-2{
@@ -586,7 +628,7 @@ small device /mobile sm and large
             height: 70px;
             .tab-1{
                width: 220px;
-               padding-left:10px;
+               padding-left:16px;
                font-size: 27px;
             }
             .tab-2{
@@ -1314,7 +1356,7 @@ small device /mobile sm and large
             height: 70px;
             .tab-1{
                width: 220px;
-               padding-left:10px;
+               padding-left:18px;
                font-size: 27px;
             }
             .tab-2{
