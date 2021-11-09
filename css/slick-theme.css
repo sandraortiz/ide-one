@@ -21,7 +21,6 @@
 {
     font-size: 0;
     line-height: 0;
-
     position: absolute;
     top: 50%;
 
@@ -39,8 +38,7 @@
     color: transparent;
     border: none;
     outline: none;
-    background: transparent;
-    border: 2.9px solid #000000;
+    background: #FFFFFF;
     border-radius: 35px;
     width: 35px;
     height: 35px;
@@ -71,11 +69,11 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 17px;
     line-height: 20px;
-    color: #000000;
+    color: #8B8F9D;
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -1,6 +1,16 @@
 /*==========================
 tab rotate 
 ===========================*/
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .ts-themes {
+    padding-bottom: 40px;
+  }
+  .ts-themes .section-title {
+    font-size: 42px !important;
+    line-height: 42px !important;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .ts-schedule .bloq-info p {
     font-size: 15px !important;
@@ -11,6 +21,16 @@ tab rotate
   .ts-schedule .bloq-info strong {
     font-size: 20px !important;
     line-height: 20px !important;
+  }
+  .ts-themes {
+    padding-bottom: 40px;
+  }
+  .ts-themes .section-title {
+    font-size: 37px !important;
+    line-height: 37px !important;
+  }
+  .ts-themes .col-text .text-direct p {
+    font-size: 16px;
   }
   .header ul.navbar-nav > li > a {
     padding: 0 10px;
@@ -89,6 +109,9 @@ tab device
   }
   .ts-themes .col-one .part-col .section-title {
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .box-conteiner .text {
     font-size: 18px;
@@ -212,7 +235,7 @@ tab device
   }
   .ts-schedule .bloq-area .btn-area {
     max-width: 320px !important;
-    height: 70px;
+    height: 64px;
     margin: auto;
     border-radius: 40px;
     display: -webkit-box;
@@ -224,7 +247,7 @@ tab device
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 29px;
+    font-size: 22.5px;
   }
   .ts-schedule .bloq-area .row-infor {
     padding: 20px 55px !important;
@@ -475,6 +498,11 @@ small device /mobile sm and large
   }
   .ts-themes .col-one .part-col .section-title {
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 39px;
+    height: auto;
   }
   .navbar-light .navbar-toggler-icon {
     background-image: none;
@@ -862,8 +890,8 @@ small device /mobile sm and large
     right: -163px;
   }
   .section-certificate .section-title {
-    font-size: 25px;
-    line-height: 27px;
+    font-size: 34px;
+    line-height: 30px;
   }
   .section-certificate .logo {
     max-width: 270px;
@@ -872,7 +900,7 @@ small device /mobile sm and large
     padding-bottom: 0px;
   }
   .ts-themes .section-title {
-    font-size: 22.5px;
+    font-size: 27.5px !important;
     line-height: 27px !important;
     border-bottom: 3px solid #DC0933;
     padding-bottom: 18px;
@@ -894,7 +922,7 @@ small device /mobile sm and large
     padding: 75px 0px 0px !important;
   }
   .ts-schedule .section-title {
-    font-size: 35px;
+    font-size: 39px;
     padding-top: 20px;
   }
   .ts-schedule h4 {
@@ -929,7 +957,9 @@ small device /mobile sm and large
   }
   .ts-schedule .bloq-area .row-infor p {
     font-size: 16px;
-    line-height: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 5px 8px;
   }
   .ts-schedule .bloq-area .row-infor .bloq-info {
     padding: 20px 15px;
@@ -944,6 +974,8 @@ small device /mobile sm and large
     left: 0px;
     position: relative;
     margin-bottom: 15px;
+    max-width: 420px;
+    width: 100%;
   }
   .ts-schedule .bloq-area .row-infor .bloq-info strong {
     font-size: 17px;
@@ -1044,7 +1076,7 @@ small device /mobile sm and large
     font-size: 865px;
   }
   .carrusel-content .ts-speakers .col-text .section-title {
-    font-size: 33px;
+    font-size: 39px;
     line-height: 36px;
     padding-bottom: 0px;
   }
@@ -1052,10 +1084,11 @@ small device /mobile sm and large
     display: block;
   }
   .carrusel-content .ts-speakers .col-text h4 {
-    font-size: 23px;
+    font-size: 25px;
   }
   .carrusel-content .ts-speakers .col-text p {
     font-size: 16.8px;
+    padding: 0px 7px;
   }
   .carrusel-content .item-slide {
     padding-bottom: 80px;
@@ -1081,12 +1114,12 @@ small device /mobile sm and large
     padding-bottom: 0px;
   }
   .section-especializate .section-title {
-    font-size: 22.5px;
-    line-height: 24px;
+    font-size: 30px;
+    line-height: 31px;
     padding-bottom: 0px;
   }
   .section-networking .section-title {
-    font-size: 22.5px;
+    font-size: 31.5px;
   }
   .section-networking h1 {
     left: -173px;
@@ -1101,7 +1134,7 @@ small device /mobile sm and large
   }
   .form-1 h1 {
     font-size: 19px !important;
-    text-align: justify;
+    text-align: center;
   }
   .form-1 h1 span {
     font-size: 14px !important;
@@ -1111,6 +1144,12 @@ small device /mobile sm and large
   .form-1 .form-check-label a {
     font-size: 12.3px;
     line-height: 14px;
+  }
+  .form-1 input, .form-1 select {
+    border: none !important;
+  }
+  .form-1 .btn {
+    border: none !important;
   }
 }
 

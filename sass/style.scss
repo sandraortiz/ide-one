@@ -425,15 +425,15 @@
             text-transform: initial;
             margin-bottom: 20px;
             color: #FFFFFF;
-            font-size: 57px;
+            font-size: 52px;
             font-family: 'pressura-bold';
-            line-height: 57px;
+            line-height: 50px;
             span{
-               font-size: 85px;
+               font-size: 72px;
             }
          }
          .banner-info{
-            margin-bottom: 20px;
+            margin-bottom: 29px;
             font-size: 25px;
             font-family: 'raleway-regular';
             line-height: 26px;
@@ -457,6 +457,7 @@
             line-height: 23px;
             span{
                font-size: 18px;
+               display: block;
             }
          }
          .form-check-label{
@@ -474,7 +475,7 @@
          ::placeholder { color: $white-color; }
          input, select{
             background-color: #71747C;
-            border: 1.8px solid $white-color;
+            border: 1.8px solid #71747C;
             color: $white-color;
           
             
@@ -495,7 +496,6 @@
          .btn{
             border-radius: 50px;
             height: 70px;
-            border: 2.7px solid $white-color;
             font-family: 'pressura-bold';
             font-size: 27px;
             line-height: 28px;
@@ -799,8 +799,12 @@
          border-right: 2px solid $primary-color;
       }
      .section-title{
-        color: $gray-color;
-        line-height: 35px; 
+        color: #4e4d4d;
+        line-height: 49px; 
+        font-size: 48px;
+        height: 145px;
+        display: flex;
+        align-items: center;
       }
    }
    .col-text{
@@ -812,13 +816,15 @@
          right: -64px;
          top: -78px;
          position: absolute;
-         color: rgba(220, 9, 51, 0.17);
+         color: rgba(220, 9, 51, 0.09);
          font-family: 'pressura-bold';
       }
       .text-direct{
          margin-bottom: 10px;
          p{
             font-family: 'raleway-regular';
+            letter-spacing: 0.04em;
+            color: #4e4d4d;
          }
       }
    }
@@ -1168,7 +1174,6 @@
          height: 62px;
          margin: auto;
             border-radius: 40px;
-            border: 3px solid $white-color;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1593,7 +1598,8 @@
    }
    .section-title{
       color: $white-color;
-      font-size: 30px;
+      font-size: 40px;
+      line-height: 38px;
    }
    h1{
       font-size: 700px;
@@ -1619,8 +1625,8 @@
       overflow: hidden;
       .section-title{
          color: $white-color;
-         font-size: 30px;
-         line-height: 35px;
+         font-size: 40px;
+         line-height: 37px;
       }
       .semicirculo{
          background: #040405;
@@ -1686,7 +1692,7 @@
    }
    .section-title{
       color: $white-color;
-      font-size: 30px;
+      font-size: 42px;
    }
    .semicirculo{
       background: $white-color;
@@ -3431,7 +3437,7 @@ blockquote:before {
             }
          }
          h4{
-            font-size: 30px;
+            font-size: 34px;
             color: $white-color;
             text-align: center;
             font-family: 'pressura-bold';
@@ -3461,14 +3467,15 @@ blockquote:before {
    }
    .item-slide{
       .name-expositor{
-         font-size: 20.6px;
-         font-family: 'raleway-bold';
+         font-size: 21.3px;
+         font-family: 'raleway-bold'!important;
          
       }
       p{
-         font-size: 16.7px; 
+         font-size: 15.3px; 
          font-family: 'raleway-regular'!important;
          line-height: 19px;
+         padding: 0px 10px;
       }
    }
    .expositor_1, .expositor_2, .expositor_3, 
@@ -3477,9 +3484,10 @@ blockquote:before {
 .expositor_10, .expositor_11, .expositor_12, 
 .expositor_13, .expositor_14, .expositor_15,
  .expositor_16, .expositor_17, .expositor_18{
-   max-width: 350px;
-   margin: auto;
+   max-width: 270px;
+   margin: auto auto 15px;
    width: 100%!important;
+
 }  
 .expositor_1 {
   content: url('../images/expositores/William-Arteaga.png');

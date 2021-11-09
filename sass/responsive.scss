@@ -2,7 +2,14 @@
 tab rotate 
 ===========================*/
 @media (min-width: 1200px) and (max-width: 1500px) {
- 
+   .ts-themes{
+      padding-bottom: 40px;
+      .section-title{
+         font-size: 42px!important;
+         line-height: 42px!important;
+      }
+      
+   } 
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .ts-schedule {
@@ -20,6 +27,21 @@ tab rotate
 
      }
   }
+  .ts-themes{
+   padding-bottom: 40px;
+   .section-title{
+      font-size: 37px!important;
+      line-height: 37px!important;
+   }
+   .col-text{
+      .text-direct{
+         p{
+            font-size: 16px;
+         }
+      }
+   }
+   
+} 
  
    // header nav
    .header {
@@ -140,6 +162,7 @@ tab device
             margin: 0px auto;
             .section-title{
                text-align: center;
+               justify-content: center;
             }
          }
       }
@@ -325,13 +348,13 @@ tab device
          }
          .btn-area{
             max-width: 320px!important;
-            height: 70px;
+            height: 64px;
             margin: auto;
                border-radius: 40px;
                display: flex;
                align-items: center;
                justify-content: center;
-               font-size: 29px;
+               font-size: 22.5px;
             
          }
          .row-infor{
@@ -642,6 +665,10 @@ small device /mobile sm and large
             margin: 0px auto;
             .section-title{
                text-align: center;
+               
+               justify-content: center;
+               font-size: 39px;
+               height: auto;
             }
          }
       }
@@ -1238,8 +1265,8 @@ small device /mobile sm and large
       right: -163px;
       }
       .section-title{
-         font-size: 25px;
-         line-height: 27px;
+         font-size: 34px;
+         line-height: 30px;
       }
       .logo{
          max-width: 270px;
@@ -1248,8 +1275,8 @@ small device /mobile sm and large
    .ts-themes{
       padding-bottom: 0px;
       .section-title{
-         font-size: 22.5px;
-         line-height: 27px!important;
+         font-size: 27.5px !important;
+         line-height: 27px !important;
          border-bottom: 3px solid #DC0933;
          padding-bottom: 18px;
          margin-bottom: 24px;
@@ -1273,7 +1300,7 @@ small device /mobile sm and large
       height: auto;
       padding: 75px 0px 0px!important;
       .section-title{
-         font-size: 35px;
+         font-size: 39px;
          padding-top: 20px;
       }
       h4{
@@ -1307,7 +1334,9 @@ small device /mobile sm and large
             padding: 20px 35px!important;
             p{
                font-size: 16px;
-               line-height: 16px;
+               line-height: 19px;
+               text-align: center;
+               padding: 5px 8px;
             }
             .bloq-info{
                padding: 20px 15px;
@@ -1321,6 +1350,8 @@ small device /mobile sm and large
                   left: 0px;
                   position: relative;
                   margin-bottom: 15px;
+                  max-width: 420px;
+                  width: 100%;
                }
                strong{
                   font-size: 17px;
@@ -1443,7 +1474,7 @@ small device /mobile sm and large
          font-size: 865px;
             }
             .section-title{
-               font-size: 33px;
+               font-size: 39px;
                line-height: 36px;
                padding-bottom: 0px;
                br{
@@ -1451,10 +1482,11 @@ small device /mobile sm and large
                }
             }
             h4{
-               font-size: 23px;
+               font-size: 25px;
             }
             p{
                font-size: 16.8px;
+               padding: 0px 7px;
             }
          }
       }
@@ -1484,14 +1516,14 @@ small device /mobile sm and large
          padding-bottom: 0px;
       }
       .section-title{
-         font-size: 22.5px;
-         line-height: 24px;
+         font-size: 30px;
+         line-height: 31px;
          padding-bottom: 0px;
       }
    }
    .section-networking{
       .section-title{
-         font-size: 22.5px;
+         font-size: 31.5px;
       }
       h1{
          left: -173px;
@@ -1507,7 +1539,7 @@ small device /mobile sm and large
       }
       h1{
          font-size: 19px!important;
-         text-align: justify;
+         text-align: center;
          span{
             font-size: 14px!important;
             line-height: 15.5px;
@@ -1520,6 +1552,12 @@ small device /mobile sm and large
             font-size: 12.3px;
             line-height: 14px;
          }
+      }
+      input, select{
+         border: none!important;
+      }
+      .btn{
+         border: none!important;
       }
    }
 
