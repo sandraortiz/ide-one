@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 	Template Name: exhibz
 	Author: Themewinter
@@ -4003,7 +4002,7 @@ blockquote:before {
 }
 
 .carrusel-content .expositor_5 {
-  content: url("../images/expositores/Isaac-Zuñiga.png");
+  content: url("../images/expositores/Isaac-Zuniga.png");
 }
 
 .carrusel-content .expositor_6 {
@@ -4019,7 +4018,7 @@ blockquote:before {
 }
 
 .carrusel-content .expositor_9 {
-  content: url("../images/expositores/Maria-Benavente.png");
+  content: url("../images/expositores/Benavente.png");
 }
 
 .carrusel-content .expositor_10 {
@@ -4031,7 +4030,7 @@ blockquote:before {
 }
 
 .carrusel-content .expositor_12 {
-  content: url("../images/expositores/Enrique-Avendaño-.png");
+  content: url("../images/expositores/Enrique-Avendano.png");
 }
 
 .carrusel-content .expositor_13 {
