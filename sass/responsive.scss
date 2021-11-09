@@ -331,7 +331,7 @@ tab device
                display: flex;
                align-items: center;
                justify-content: center;
-               font-size: 30px;
+               font-size: 29px;
             
          }
          .row-infor{
@@ -864,8 +864,8 @@ small device /mobile sm and large
       background-position: bottom 50%!important;
       .banner-item {
          min-height: inherit;
-         margin: 106px 0px 0px;
-         
+         margin: 5px 0px 0px;
+        
 
          .banner-content-wrap {
             padding-bottom: 5px;
@@ -1210,6 +1210,8 @@ small device /mobile sm and large
    }
    //formulario
    .form-1{
+      
+      background-color:  #8B8F9D!important;
       padding: 35px 32px !important;
    }
 
@@ -1229,36 +1231,58 @@ small device /mobile sm and large
       padding-bottom: 50px;
    }
    .section-certificate{
+      background-position: 39%;
       h1{
-         font-size: 400px;
-      top: -88px;
-      right: -33px;
+         font-size: 800px;
+      top: -43px;
+      right: -163px;
+      }
+      .section-title{
+         font-size: 25px;
+         line-height: 27px;
+      }
+      .logo{
+         max-width: 270px;
       }
    }
    .ts-themes{
       padding-bottom: 0px;
+      .section-title{
+         font-size: 22.5px;
+         line-height: 27px!important;
+         border-bottom: 3px solid #DC0933;
+         padding-bottom: 18px;
+         margin-bottom: 24px;
+      }
       .col-text{
          h1{
             bottom: -34px;
             line-height: 80px;
-            font-size: 400px;
-            right: -35px;
+            font-size: 800px;
+            right: -152px;
+            top: 67px;
          }
          p{
             font-size: 16px;
+            text-align: center;
          }
       }
       
    } 
    .ts-schedule {
       height: auto;
-      padding: 60px 0px!important;
+      padding: 75px 0px 0px!important;
       .section-title{
-         font-size: 36px;
+         font-size: 35px;
+         padding-top: 20px;
+      }
+      h4{
+         font-size: 22px;
+         line-height: 24px;
       }
       .bloq-area{
-         padding: 30px 0px 10px;
-         margin-bottom: 40px;
+         padding: 50px 0px 10px;
+         margin-bottom: 0px;
          .tab{
             height: 70px;
             .tab-1{
@@ -1272,13 +1296,11 @@ small device /mobile sm and large
          }
          .btn-area{
             max-width: 270px!important;
-            height: 67px;
-            margin: 20px auto 5px;
+            height: 60px;
+            margin: 46px auto 5px;
                border-radius: 40px;
-               display: flex;
-               align-items: center;
-               justify-content: center;
-               font-size: 26px;
+               font-size: 23.4px;
+               border: none;
             
          }
          .row-infor{
@@ -1335,7 +1357,7 @@ small device /mobile sm and large
       
    }
    .navbar{
-      justify-content: flex-start;
+      justify-content: space-between;
       .navbar-brand{
          img {
             max-width: 240px;
@@ -1371,22 +1393,32 @@ small device /mobile sm and large
     }
     .hero-area.content-left {
          .banner-item {
+            .col-shadow{
+               background-image: url('../images/banner/kv-mb.jpg');
+               background-size: cover;
+               background-position: bottom center;
+            }
          min-height: inherit;
-         margin: 106px 0px 0px;
+         margin: 6px 0px 0px;
          
 
          .banner-content-wrap {
             padding-bottom: 5px;
             padding-top: 140px;
             h1.banner-title{
-               font-size: 40px;
-               line-height: 40px;
+               font-size: 34px;
+               line-height: 34px;
+               text-align: center;
+               padding-top: 98px;
                span{
-                  font-size: 51px;
+                  font-size: 45px;
                }
             }
             p.banner-info{
-               font-size: 25px;
+               font-size: 15px;
+               text-align: center;
+               line-height: 18px;
+               padding-bottom: 10px;
             }
          }
         
@@ -1401,48 +1433,112 @@ small device /mobile sm and large
       }
    }
    .carrusel-content{
+      padding-bottom: 65px;
       .ts-speakers{
+         padding-bottom: 15px;
          .col-text{
             h1{
-               left: -37px;
+               left: -104px;
          top: -90px;
-         font-size: 396px;
+         font-size: 865px;
             }
             .section-title{
-               font-size: 35px;
-               line-height: 40px;
+               font-size: 33px;
+               line-height: 36px;
+               padding-bottom: 0px;
+               br{
+                  display: block;
+               }
+            }
+            h4{
+               font-size: 23px;
             }
             p{
                font-size: 16.8px;
             }
          }
       }
+      .item-slide{
+         padding-bottom: 80px;
+         .text-expositor{
+            margin-bottom: 0px;
+            font-size: 12.7px;
+            line-height: 15.4px;
+         }
+         .name-expositor{
+            font-size: 18px;
+         }
+         .slick-dots{
+            top: 1px;
+         }
+      }
    }
    .section-especializate {
       h1{
-         left: -37px;
-         top: -90px;
-         font-size: 396px;
+         left: -176px;
+         top: -25px;
+         font-size: 800px;
       }
       p{
          font-size: 16px;
+         padding-bottom: 0px;
+      }
+      .section-title{
+         font-size: 22.5px;
+         line-height: 24px;
+         padding-bottom: 0px;
       }
    }
    .section-networking{
+      .section-title{
+         font-size: 22.5px;
+      }
       h1{
-         left: -37px;
-         top: -90px;
-         font-size: 396px;
+         left: -173px;
+         top: 30px;
+         font-size: 800px;
       }
    }
     //formulario
     .form-1{
-      padding: 35px 12px !important;
+      padding: 35px 45px 26px !important;
+      .btn{
+         font-size: 21px!important;
+      }
+      h1{
+         font-size: 19px!important;
+         text-align: justify;
+         span{
+            font-size: 14px!important;
+            line-height: 15.5px;
+            font-family: 'raleway-medium';
+         }
+
+      }
+      .form-check-label{
+         a{
+            font-size: 12.3px;
+            line-height: 14px;
+         }
+      }
    }
 
 }
 @media (max-width: 325px) {
    .form-1{
+      padding: 35px 32px 22px !important;
+      h1{
+         font-size: 17px!important;
+         line-height: 17.5px !important;
+         span{
+            font-size: 15px;
+            line-height: 12.5px;
+         }
+
+      }
+      .btn{
+         font-size: 19px!important;
+      }
       select, input{
          font-size: 14px!important;
       }
@@ -1461,15 +1557,16 @@ small device /mobile sm and large
             padding-bottom: 5px;
             padding-top: 120px;
             h1.banner-title{
-               font-size: 29px;
-               line-height: 31px;
+               font-size: 26px;
+               line-height: 26px;
                margin-bottom: 0px;
                span{
-                  font-size: 40px;
+                  font-size: 35px;
                }
             }
             p.banner-info{
-               font-size: 21px;
+               font-size: 18px;
+               line-height: 19px;
             }
          }
         

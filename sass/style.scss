@@ -80,12 +80,12 @@
    ul.navbar-nav {
       >li {
          border-right: 1px solid $white-color;
-         max-width: 170px;
+         max-width: 200px;
          width: 100%;
          display: flex;
          align-items: center;
          justify-content: center;
-         font-family: 'raleway-regular';
+         font-family: 'raleway-bold';
 
          >a {
             font-weight: 400;
@@ -106,7 +106,7 @@
 
             .btn{
                border: 2px solid $white-color;
-               padding: 10px  12px;
+               padding: 10px  12px!important;
                border-radius: 40px;
                font-size: 16px;
                text-transform: none!important;
@@ -192,6 +192,7 @@
                line-height: 15px;
                text-align: center;
                font-size: 17px;
+               padding: 0px 5px;
 
             }
 
@@ -299,7 +300,7 @@
       top: 0;
       width: 100%;
       z-index: 99;
-      background: rgba(0, 0, 0, .90);
+      background-color: $gray-color;
       padding: 15px 0;
 
       .navbar {
@@ -473,7 +474,7 @@
          ::placeholder { color: $white-color; }
          input, select{
             background-color: #71747C;
-            border: 2.3px solid $white-color;
+            border: 1.8px solid $white-color;
             color: $white-color;
           
             
@@ -1060,7 +1061,7 @@
 .ts-schedule {
    background-color: $white-color;
    height: auto;
-   padding: 100px 0px;
+   padding: 130px 0px;
    .section-title{
       color: $gray-color;
       font-size: 70px;
@@ -1080,7 +1081,6 @@
     
       &.aeronautica{
          background-color: $aeronautica;
-         background-image: url('../images/areas/aeronautico/bg-aeronautica.jpg');
          .tab-1{
             color: $aeronautica;
          }
@@ -1090,7 +1090,6 @@
       }
       &.agricola{
          background-color: $agricola;
-         background-image: url('../images/areas/agricola/agricola.jpg');
          .tab-1{
             color: $agricola;
          }
@@ -1161,24 +1160,24 @@
          }
       }
       .btn-area{
-         max-width: 320px!important;
+         max-width: 290px!important;
          width: 100%;
          color: $white-color;
          text-decoration: none;
          text-align: center;
-         height: 70px;
+         height: 62px;
          margin: auto;
             border-radius: 40px;
             border: 3px solid $white-color;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 30px;
+            font-size: 24.6px;
             font-family: 'pressura-bold';
          
       }
       .row-infor{
-         padding: 20px 25px!important;
+         padding: 40px 25px 25px!important;
          p{
             font-family: 'raleway-regular';
             text-align: justify;
@@ -1186,7 +1185,7 @@
          .bloq-info{
             padding: 20px 15px;
             h3{
-               font-size: 21.5px;
+               font-size: 22.5px;
                color: $white-color;
                font-family: 'pressura-bold';
                text-transform: uppercase;
@@ -1197,7 +1196,7 @@
             }
             strong{
                font-family: 'raleway-bold';
-               font-size: 25px;
+               font-size: 21px;
             }
             p{
                margin-bottom: 0px;
@@ -1701,6 +1700,9 @@
             position: absolute;
             color: rgba(255, 255, 255, 0.17);
             font-family: 'pressura-bold';
+   }
+   p{
+      font-family: 'raleway-regular';
    }
 }
 
@@ -3395,31 +3397,38 @@ blockquote:before {
   }
 }
 
-/*------------porque esan-------------*/
+/*------------carrusel-------------*/
 
 .carrusel-content{
-   &section{
-      
+   padding-bottom: 70px;
    background-image: url('../images/sections/ventajas/kv.jpg');
-   }
+   background-repeat: no-repeat;
+   background-size: cover;
    background-color: $gray-color ;
+   position: relative;
+   overflow: hidden;
+   overflow-y: hidden;
    .ts-speakers {
-      padding-top: 100px;
+      padding-top: 140px;
       padding-bottom: 80px;
-      position: relative;
-      overflow: hidden;
+      
+     
       color: $gray-color;
       height: auto;
       display: flex;
       align-items: flex-end;
-      overflow-y: hidden;
+      
+      
       .col-text{
          font-size: 30px;
          .section-title{
             color: $white-color;
             text-align: center;
-            font-size: 70px;
+            font-size: 62px;
             margin-bottom: 50px;
+            br{
+               display: none;
+            }
          }
          h4{
             font-size: 30px;
@@ -3441,10 +3450,11 @@ blockquote:before {
          .text-direct{
             margin-bottom: 10px;
             p{
-               font-family: 'raleway-regular';
+               
                color: $white-color;
                max-width: 656px;
                margin: auto;
+               font-family: 'raleway-regular';
             }
          }
       }
@@ -3453,6 +3463,12 @@ blockquote:before {
       .name-expositor{
          font-size: 20.6px;
          font-family: 'raleway-bold';
+         
+      }
+      p{
+         font-size: 16.7px; 
+         font-family: 'raleway-regular'!important;
+         line-height: 19px;
       }
    }
    .expositor_1, .expositor_2, .expositor_3, 
@@ -3461,7 +3477,7 @@ blockquote:before {
 .expositor_10, .expositor_11, .expositor_12, 
 .expositor_13, .expositor_14, .expositor_15,
  .expositor_16, .expositor_17, .expositor_18{
-   max-width: 360px;
+   max-width: 350px;
    margin: auto;
    width: 100%!important;
 }  
@@ -3562,7 +3578,7 @@ blockquote:before {
 }
 .slick-dots {
   bottom: 0px !important;
-  padding-top: 60px !important;
+  padding-top: 0px !important;
   position: relative !important;
 }
 .schedules-1-image{
@@ -3624,7 +3640,7 @@ blockquote:before {
  .table{
    color:white !important ;
    font-family: 'raleway-regular';
-   font-size: 25px;
+   font-size: 15px;
  }
  .btn-excel{
    color:white !important ;
@@ -3698,7 +3714,9 @@ blockquote:before {
   .schedules-text-2{
     text-align: center;
   }
-  .expositor_1 , .expositor_2 ,.expositor_3, .expositor_4 {
+  .expositor_1 , .expositor_2 ,.expositor_3, .expositor_4, .expositor_5 , .expositor_6 ,.expositor_7, .expositor_8,
+  .expositor_9 , .expositor_10 ,.expositor_11, .expositor_12, .expositor_13 , .expositor_14 ,.expositor_15, .expositor_16,
+  .expositor_17 , .expositor_18  {
     width:150px 
   }
   
