@@ -59,7 +59,8 @@ body,
 p {
   font-family: 'Quincy-bold';
   line-height: 24px;
-  font-size: 20px;
+  font-size: 110%;
+  font-weight: 600;
 }
 
 h1,
@@ -68,7 +69,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #8B8F9D;
+  color: #767989;
   font-family: 'Roboto', sans-serif;
 }
 

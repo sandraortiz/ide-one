@@ -91,7 +91,8 @@ body,
 p {
   font-family: 'Quincy-bold';
   line-height: 24px;
-  font-size: 20px;
+  font-size: 110%;
+  font-weight: 600;
 }
 
 h1,
@@ -100,7 +101,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #8B8F9D;
+  color: #767989;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -552,7 +553,7 @@ img.pull-right {
 }
 
 .header .navbar {
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .header .navbar-toggler {
@@ -583,6 +584,7 @@ img.pull-right {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: 'raleway-bold';
+  height: 50px;
 }
 
 .header ul.navbar-nav > li > a {
@@ -598,7 +600,7 @@ img.pull-right {
 }
 
 .header ul.navbar-nav > li.header-ticket {
-  margin-top: 15px;
+  margin-top: 5px;
   border-right: none !important;
   max-width: 200px;
 }
@@ -774,7 +776,7 @@ img.pull-right {
   top: 0;
   width: 100%;
   z-index: 99;
-  background-color: #8B8F9D;
+  background-color: #767989;
   padding: 15px 0;
 }
 
@@ -1290,7 +1292,7 @@ img.pull-right {
   position: relative;
   overflow: hidden;
   background-color: #fff;
-  color: #8B8F9D;
+  color: #767989;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1353,6 +1355,7 @@ img.pull-right {
   font-family: 'raleway-regular';
   letter-spacing: 0.04em;
   color: #4e4d4d;
+  font-size: 19.5px;
 }
 
 .ts-speaker {
@@ -1606,11 +1609,11 @@ img.pull-right {
 .ts-schedule {
   background-color: #fff;
   height: auto;
-  padding: 105px 0px;
+  padding: 105px 0px 70px;
 }
 
 .ts-schedule .section-title {
-  color: #8B8F9D;
+  color: #767989;
   font-size: 70px;
   margin-bottom: 10px;
   text-align: center;
@@ -1768,11 +1771,12 @@ img.pull-right {
 
 .ts-schedule .bloq-area .row-infor p {
   font-family: 'raleway-regular';
-  text-align: justify;
+  text-align: left;
+  letter-spacing: 0.04em;
 }
 
 .ts-schedule .bloq-area .row-infor .bloq-info {
-  padding: 20px 15px;
+  padding: 20px 40px 20px 20px;
 }
 
 .ts-schedule .bloq-area .row-infor .bloq-info h3 {
@@ -1795,7 +1799,7 @@ img.pull-right {
 .ts-schedule .bloq-area .row-infor .bloq-info p {
   margin-bottom: 0px;
   font-family: 'raleway-regular';
-  font-size: 20px;
+  font-size: 18.5px;
   text-align: left;
 }
 
@@ -2171,7 +2175,7 @@ img.pull-right {
 }
 
 .section-certificate .semicirculo {
-  background: #8B8F9D;
+  background: #767989;
   color: #fff;
 }
 
@@ -3907,7 +3911,7 @@ blockquote:before {
   background-image: url("../images/sections/ventajas/kv.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #8B8F9D;
+  background-color: #767989;
   position: relative;
   overflow: hidden;
   overflow-y: hidden;
@@ -3916,7 +3920,7 @@ blockquote:before {
 .carrusel-content .ts-speakers {
   padding-top: 120px;
   padding-bottom: 40px;
-  color: #8B8F9D;
+  color: #767989;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3968,6 +3972,8 @@ blockquote:before {
   max-width: 656px;
   margin: auto;
   font-family: 'raleway-regular';
+  font-size: 24px;
+  line-height: 27px;
 }
 
 .carrusel-content .item-slide .name-expositor {
