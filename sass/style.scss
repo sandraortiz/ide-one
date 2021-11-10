@@ -57,7 +57,7 @@
 .header {
    background-color: $primary-color;
    .navbar {
-      padding: 30px 0;
+      padding: 20px 0;
    }
    .navbar-nav{
    }
@@ -86,6 +86,7 @@
          align-items: center;
          justify-content: center;
          font-family: 'raleway-bold';
+         height: 50px;
 
          >a {
             font-weight: 400;
@@ -100,7 +101,7 @@
          }
 
          &.header-ticket {
-            margin-top: 15px;
+            margin-top: 5px;
             border-right: none!important;
             max-width: 200px;
 
@@ -832,6 +833,7 @@
             font-family: 'raleway-regular';
             letter-spacing: 0.04em;
             color: #4e4d4d;
+            font-size: 19.5px;
          }
       }
    }
@@ -1074,7 +1076,7 @@
 .ts-schedule {
    background-color: $white-color;
    height: auto;
-   padding: 105px 0px;
+   padding: 105px 0px 70px;
    .section-title{
       color: $gray-color;
       font-size: 70px;
@@ -1192,10 +1194,11 @@
          padding: 40px 25px 25px!important;
          p{
             font-family: 'raleway-regular';
-            text-align: justify;
+            text-align: left;
+            letter-spacing: 0.04em;
          }
          .bloq-info{
-            padding: 20px 15px;
+            padding: 20px 40px 20px 20px;
             h3{
                font-size: 22.5px;
                color: $white-color;
@@ -1213,7 +1216,7 @@
             p{
                margin-bottom: 0px;
                font-family: 'raleway-regular';
-               font-size: 20px;
+               font-size: 18.5px;
                text-align: left;
                &.pd-align{
                   margin-top: 19px;
@@ -3469,6 +3472,8 @@ blockquote:before {
                max-width: 656px;
                margin: auto;
                font-family: 'raleway-regular';
+               font-size: 24px;
+               line-height: 27px;
             }
          }
       }
