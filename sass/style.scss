@@ -111,7 +111,8 @@
                font-size: 16px;
                text-transform: none!important;
                width: 214px;
-               line-height: 26px;
+               line-height: 29px;
+               margin: 0 0 10px 0;
 
             }
          }
@@ -189,7 +190,7 @@
          >li {
             >a {
                color: $white-color;
-               line-height: 15px;
+               line-height: 18px;
                text-align: center;
                font-size: 17px;
                padding: 0px 5px;
@@ -323,6 +324,9 @@
          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
          padding: 0;
       }
+      .btn{
+         border: none!important;
+      }
    }
 }
 
@@ -446,24 +450,27 @@
       }
       .form-1{
          background-color: rgba(139, 143, 157, 0.65);
-         padding: 120px 68px;
+         padding: 9.5vh 68px 8vh;
          max-width: 490px;
          width: 100%;
          margin: auto;
          h1{
             color: $white-color;
-            font-size: 28px;
+            font-size: 150%;
             font-family: 'raleway-bold';
-            line-height: 26.5px;
+            line-height: 105%;
+            text-align: center;
             span{
-               font-size: 18px;
+               font-size: 70%;
                display: block;
+               margin: 15px 0;
+               line-height: 100%;
             }
          }
          .form-check-label{
             font-family: 'raleway-regular';
                font-size: 17px;
-               line-height: 18px;
+               line-height: 20px;
                margin-bottom: 20px;
             a{
                text-decoration: none;
@@ -1067,7 +1074,7 @@
 .ts-schedule {
    background-color: $white-color;
    height: auto;
-   padding: 130px 0px;
+   padding: 105px 0px;
    .section-title{
       color: $gray-color;
       font-size: 70px;
@@ -1598,8 +1605,8 @@
    }
    .section-title{
       color: $white-color;
-      font-size: 40px;
-      line-height: 38px;
+      font-size: 48px;
+      line-height: 49px;
    }
    h1{
       font-size: 700px;
@@ -1625,8 +1632,8 @@
       overflow: hidden;
       .section-title{
          color: $white-color;
-         font-size: 40px;
-         line-height: 37px;
+         font-size: 48px;
+         line-height: 49px;
       }
       .semicirculo{
          background: #040405;
@@ -1692,7 +1699,8 @@
    }
    .section-title{
       color: $white-color;
-      font-size: 42px;
+      font-size: 48px;
+      line-height: 49px;
    }
    .semicirculo{
       background: $white-color;
@@ -3415,8 +3423,8 @@ blockquote:before {
    overflow: hidden;
    overflow-y: hidden;
    .ts-speakers {
-      padding-top: 140px;
-      padding-bottom: 80px;
+      padding-top: 120px;
+      padding-bottom: 40px;
       
      
       color: $gray-color;
@@ -3687,7 +3695,6 @@ blockquote:before {
    width: 268px;
    padding: 5px;
    font-size: 16px;
-   line-height: 1;
    border: 0;
    border-radius: 5px;
    height: 34px;

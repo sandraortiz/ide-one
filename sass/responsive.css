@@ -1167,12 +1167,12 @@ small device /mobile sm and large
     font-size: 21px !important;
   }
   .form-1 h1 {
-    font-size: 19px !important;
+    font-size: 22px !important;
     text-align: center;
   }
   .form-1 h1 span {
-    font-size: 14px !important;
-    line-height: 15.5px;
+    font-size: 15px !important;
+    line-height: 16.9px !important;
     font-family: 'raleway-medium';
   }
   .form-1 .form-check-label a {
