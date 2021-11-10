@@ -18,29 +18,23 @@ formTask.addEventListener('submit'  , async(e) => {
   db.collection('informacion').doc().set({
     email , nombre , apellido , telefono , area , fecha , hora
   })
-  // console.log(email)
-  // console.log(response)
 } )
 
-// const loginPage =  document.getElementById('login-page');
+const select = document.getElementById('ciudad_de_residencia');
 
-// loginPage.onclick = gologinPage; // Agrega función onclick al elemento
-  
-// function gologinPage() {
-//   window.location.href = "login.html";
-
-// }
-
-
-const areonautica =  document.getElementById('aeronauticaButton');
-
-areonautica.onclick = areonauticaButton; // Agrega función onclick al elemento
-  
-function areonauticaButton() {
-  document.getElementById('ciudad_de_residencia').value='Aeronáutica'
+select.onclick=selectclick;
+function selectclick(){
+  select.style.backgroundColor = "#404041";
 }
 
 
+
+const areonautica =  document.getElementById('aeronauticaButton');
+areonautica.onclick = areonauticaButton; // Agrega función onclick al elemento  
+function areonauticaButton() {
+  select.value='Aeronáutica',
+  select.style.backgroundColor = "#2524D2";
+}
 
 const agricola =  document.getElementById('agricolaButton');
 
@@ -48,6 +42,7 @@ agricola.onclick = agricolaButton; // Agrega función onclick al elemento
   
 function agricolaButton() {
   document.getElementById('ciudad_de_residencia').value='Agricola'
+  select.style.backgroundColor = "#42AB4A";
 }
 
 
@@ -57,6 +52,7 @@ alimentaria.onclick = alimentariaButton; // Agrega función onclick al elemento
     
 function alimentariaButton() {
   document.getElementById('ciudad_de_residencia').value='Alimentaria'
+  select.style.backgroundColor = "#826E2D";
 }
 
 
@@ -67,6 +63,7 @@ pesca.onclick = pescaButton; // Agrega función onclick al elemento
     
 function pescaButton() {
   document.getElementById('ciudad_de_residencia').value='Pesca y Acuicultura'
+  select.style.backgroundColor = "#3CC8C8";
 }
 
 
@@ -76,6 +73,7 @@ turismo.onclick = turismoButton; // Agrega función onclick al elemento
     
 function turismoButton() {
   document.getElementById('ciudad_de_residencia').value='Turismo Rural'
+  select.style.backgroundColor = "#640078";
 }
 
 
@@ -85,5 +83,6 @@ veterinaria.onclick = veterinariaButton; // Agrega función onclick al elemento
     
 function veterinariaButton() {
   document.getElementById('ciudad_de_residencia').value='Veterinaria'
+  select.style.backgroundColor = "#FF6423";
 }
 
