@@ -971,7 +971,7 @@ img.pull-right {
 
 .hero-area.content-left .banner-item .form-1 input, .hero-area.content-left .banner-item .form-1 select {
   background-color: #404041;
-  border: 1.8px solid #404041;
+  border: none;
   color: #fff;
   border-radius: 10px;
   font-family: 'raleway-medium';
@@ -984,7 +984,6 @@ img.pull-right {
 .hero-area.content-left .banner-item .form-1 select {
   color: #fff;
   padding-left: 9px;
-  font-size: 15.9px;
   height: 45px;
   width: 100%;
 }
@@ -1744,7 +1743,7 @@ img.pull-right {
 }
 
 .ts-schedule .bloq-area .btn-area {
-  max-width: 290px !important;
+  max-width: 260px !important;
   width: 100%;
   color: #fff;
   text-decoration: none;

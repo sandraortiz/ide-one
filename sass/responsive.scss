@@ -1307,7 +1307,7 @@ small device /mobile sm and large
       right: -163px;
       }
       .section-title{
-         font-size: 34px;
+         font-size: 30px;
          line-height: 30px;
       }
       .logo{
@@ -1317,8 +1317,8 @@ small device /mobile sm and large
    .ts-themes{
       padding-bottom: 0px;
       .section-title{
-         font-size: 27.5px !important;
-         line-height: 27px !important;
+         font-size: 30px !important;
+         line-height: 30px !important;
          border-bottom: 3px solid #DC0933;
          padding-bottom: 18px;
          margin-bottom: 24px;
@@ -1332,7 +1332,8 @@ small device /mobile sm and large
             top: 67px;
          }
          p{
-            font-size: 16px;
+            font-size: 16.5px!important;
+            line-height: 20px;
             text-align: center;
          }
       }
@@ -1528,8 +1529,9 @@ small device /mobile sm and large
                font-size: 25px;
             }
             p{
-               font-size: 16.8px;
+               font-size: 16.5px!important;
                padding: 0px 7px;
+               line-height: 20px!important;
             }
          }
       }
@@ -1555,23 +1557,29 @@ small device /mobile sm and large
          font-size: 800px;
       }
       p{
-         font-size: 16px;
+         font-size: 16.5px;
          padding-bottom: 0px;
+         line-height: 20px;
       }
       .section-title{
          font-size: 30px;
-         line-height: 31px;
+         line-height: 30px;
          padding-bottom: 0px;
       }
    }
    .section-networking{
       .section-title{
-         font-size: 31.5px;
+         font-size: 30px;
+         line-height: 30px;
       }
       h1{
          left: -173px;
          top: 30px;
          font-size: 800px;
+      }
+      p{
+         font-size: 16.5px!important;
+         line-height: 20px!important;
       }
    }
     //formulario
